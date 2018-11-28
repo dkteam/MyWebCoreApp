@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebCoreApp", "MyWebCoreApp\MyWebCoreApp.csproj", "{CF667C0A-ECC5-43D3-8D56-2595AC39A188}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWebCoreApp", "MyWebCoreApp\MyWebCoreApp.csproj", "{CF667C0A-ECC5-43D3-8D56-2595AC39A188}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebCoreApp.Infrastructure", "MyWebCoreApp.Infrastructure\MyWebCoreApp.Infrastructure.csproj", "{AF007200-8E65-42E6-ABA1-F4915A2D50E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebCoreApp.Utilities", "MyWebCoreApp.Utilities\MyWebCoreApp.Utilities.csproj", "{CFE26C1B-19EE-4559-89B1-31005015B23A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebCoreApp.Data", "MyWebCoreApp.Data\MyWebCoreApp.Data.csproj", "{6C804506-98A9-4200-AD51-49109D5F30D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebCoreApp.Data.EF", "MyWebCoreApp.Data.EF\MyWebCoreApp.Data.EF.csproj", "{B71FD70A-7755-47B4-A18E-C0045F3EE37A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWebCoreApp.Application", "MyWebCoreApp.Application\MyWebCoreApp.Application.csproj", "{6BA00A20-3D7A-4AD0-B175-B206FA8F9F2F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{343DAE5D-029F-4D4E-A3AA-D6F258B393C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{CDA177F3-F3B1-4E5C-9A7D-EA7265B850ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{6E70F715-2386-468E-8355-6D91DC416013}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - Infrastructure", "{9F2913EA-B107-4EB4-8307-1175160BDFF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +33,37 @@ Global
 		{CF667C0A-ECC5-43D3-8D56-2595AC39A188}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF667C0A-ECC5-43D3-8D56-2595AC39A188}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF667C0A-ECC5-43D3-8D56-2595AC39A188}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF007200-8E65-42E6-ABA1-F4915A2D50E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF007200-8E65-42E6-ABA1-F4915A2D50E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF007200-8E65-42E6-ABA1-F4915A2D50E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF007200-8E65-42E6-ABA1-F4915A2D50E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFE26C1B-19EE-4559-89B1-31005015B23A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFE26C1B-19EE-4559-89B1-31005015B23A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFE26C1B-19EE-4559-89B1-31005015B23A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFE26C1B-19EE-4559-89B1-31005015B23A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C804506-98A9-4200-AD51-49109D5F30D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C804506-98A9-4200-AD51-49109D5F30D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C804506-98A9-4200-AD51-49109D5F30D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C804506-98A9-4200-AD51-49109D5F30D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B71FD70A-7755-47B4-A18E-C0045F3EE37A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B71FD70A-7755-47B4-A18E-C0045F3EE37A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B71FD70A-7755-47B4-A18E-C0045F3EE37A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B71FD70A-7755-47B4-A18E-C0045F3EE37A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BA00A20-3D7A-4AD0-B175-B206FA8F9F2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BA00A20-3D7A-4AD0-B175-B206FA8F9F2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BA00A20-3D7A-4AD0-B175-B206FA8F9F2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BA00A20-3D7A-4AD0-B175-B206FA8F9F2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CF667C0A-ECC5-43D3-8D56-2595AC39A188} = {343DAE5D-029F-4D4E-A3AA-D6F258B393C3}
+		{AF007200-8E65-42E6-ABA1-F4915A2D50E1} = {9F2913EA-B107-4EB4-8307-1175160BDFF0}
+		{CFE26C1B-19EE-4559-89B1-31005015B23A} = {9F2913EA-B107-4EB4-8307-1175160BDFF0}
+		{6C804506-98A9-4200-AD51-49109D5F30D3} = {6E70F715-2386-468E-8355-6D91DC416013}
+		{B71FD70A-7755-47B4-A18E-C0045F3EE37A} = {6E70F715-2386-468E-8355-6D91DC416013}
+		{6BA00A20-3D7A-4AD0-B175-B206FA8F9F2F} = {CDA177F3-F3B1-4E5C-9A7D-EA7265B850ED}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {066BACFC-F93C-420F-B449-2A93D50A4940}
