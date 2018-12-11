@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using MyWebCoreApp.Data.Entities;
 using MyWebCoreApp.Data.Enums;
+using MyWebCoreApp.Utilities.Constants;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -61,21 +62,21 @@ namespace MyWebCoreApp.Data.EF
                 await _userManager.AddToRoleAsync(user, "Admin");
             }
 
-            //if (!_context.Contacts.Any())
-            //{
-            //    _context.Contacts.Add(new Contact()
-            //    {
-            //        Id = CommonConstants.DefaultContactId,
-            //        Address = "No 36 Lane 133 Nguyen Phong Sac Cau Giay",
-            //        Email = "pandashop@gmail.com",
-            //        Name = "Panda Shop",
-            //        Phone = "0942 324 543",
-            //        Status = Status.Active,
-            //        Website = "http://pandashop.com",
-            //        Lat = 21.0435009,
-            //        Lng = 105.7894758
-            //    });
-            //}
+            if (!_context.Contacts.Any())
+            {
+                _context.Contacts.Add(new Contact()
+                {
+                    Id = CommonConstants.DefaultContactId,
+                    Address = "No 36 Lane 133 Nguyen Phong Sac Cau Giay",
+                    Email = "pandashop@gmail.com",
+                    Name = "Panda Shop",
+                    Phone = "0942 324 543",
+                    Status = Status.Active,
+                    Website = "http://pandashop.com",
+                    Lat = 21.0435009,
+                    Lng = 105.7894758
+                });
+            }
 
             if (_context.Functions.Count() == 0)
             {
@@ -115,48 +116,77 @@ namespace MyWebCoreApp.Data.EF
 
             if (_context.ProductTypes.Count() == 0)
             {
-                _context.ProductTypes.AddRange(new List<ProductType>()
+                //_context.ProductTypes.AddRange(new List<ProductType>()
+                //{
+                //    new ProductType(){Name = "Động phổ thông"}
+                //});
+                List<ProductType> listProductType = new List<ProductType>()
                 {
-                    new ProductType(){Name = "Động phổ thông"}
-                });
+                    new ProductType(){Name = "Động phổ thông",
+                        Products = new List<Product>()
+                        {
+                            new Product(){Name = "Product 1",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-1", SeoPageTitle = "", ModifiedDate = DateTime.Now, Price = 1000,Status = Status.Active},
+                            new Product(){Name = "Product 2",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-2", SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+                            new Product(){Name = "Product 3",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-3", SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+                            new Product(){Name = "Product 4",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-4", SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+                            new Product(){Name = "Product 5",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-5", SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+                            new Product(){Name = "Product 6",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-6", SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+                            new Product(){Name = "Product 7",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-7", SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+                            new Product(){Name = "Product 8",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-8", SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+                            new Product(){Name = "Product 9",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-9", SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+                            new Product(){Name = "Product 10",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-10", SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+                            new Product(){Name = "Product 11",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-11", SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+                            new Product(){Name = "Product 12",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-12", SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+                            new Product(){Name = "Product 13",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-13", SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+                            new Product(){Name = "Product 14",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-14", SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+                            new Product(){Name = "Product 15",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-15", SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+                            new Product(){Name = "Product 16",CreatedDate=DateTime.Now, ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-16", SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+                            new Product(){Name = "Product 17",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-17", SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+                            new Product(){Name = "Product 18",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-18", SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+                            new Product(){Name = "Product 19",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-19", SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+                            new Product(){Name = "Product 20",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-20", SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+                        }
+                    }
+                };
+                _context.ProductTypes.AddRange(listProductType);
             }
 
-            if (_context.Products.Count() == 0)
-            {
-                _context.Products.AddRange(new List<Product>()
-                {
-                        new Product(){Name = "Product 1",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-1", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now, Price = 1000,Status = Status.Active},
-                        new Product(){Name = "Product 2",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-2", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
-                        new Product(){Name = "Product 3",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-3", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
-                        new Product(){Name = "Product 4",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-4", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
-                        new Product(){Name = "Product 5",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-5", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
-                        new Product(){Name = "Product 6",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-6", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
-                        new Product(){Name = "Product 7",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-7", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
-                        new Product(){Name = "Product 8",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-8", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
-                        new Product(){Name = "Product 9",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-9", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
-                        new Product(){Name = "Product 10",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-10", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
-                        new Product(){Name = "Product 11",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-11", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
-                        new Product(){Name = "Product 12",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-12", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
-                        new Product(){Name = "Product 13",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-13", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
-                        new Product(){Name = "Product 14",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-14", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
-                        new Product(){Name = "Product 15",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-15", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
-                        new Product(){Name = "Product 16",CreatedDate=DateTime.Now, ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-16", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
-                        new Product(){Name = "Product 17",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-17", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
-                        new Product(){Name = "Product 18",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-18", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
-                        new Product(){Name = "Product 19",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-19", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
-                        new Product(){Name = "Product 20",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-20", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
-                });
-            }
-
-            //if (_context.Footers.Count(x => x.Id == CommonConstants.DefaultFooterId) == 0)
+            //if (_context.Products.Count() == 0)
             //{
-            //    string content = "Footer";
-            //    _context.Footers.Add(new Footer()
+            //    _context.Products.AddRange(new List<Product>()
             //    {
-            //        Id = CommonConstants.DefaultFooterId,
-            //        Content = content
+            //            new Product(){Name = "Product 1",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-1", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now, Price = 1000,Status = Status.Active},
+            //            new Product(){Name = "Product 2",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-2", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+            //            new Product(){Name = "Product 3",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-3", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+            //            new Product(){Name = "Product 4",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-4", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+            //            new Product(){Name = "Product 5",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-5", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+            //            new Product(){Name = "Product 6",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-6", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+            //            new Product(){Name = "Product 7",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-7", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+            //            new Product(){Name = "Product 8",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-8", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+            //            new Product(){Name = "Product 9",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-9", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+            //            new Product(){Name = "Product 10",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-10", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+            //            new Product(){Name = "Product 11",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-11", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+            //            new Product(){Name = "Product 12",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-12", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+            //            new Product(){Name = "Product 13",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-13", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+            //            new Product(){Name = "Product 14",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-14", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+            //            new Product(){Name = "Product 15",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-15", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+            //            new Product(){Name = "Product 16",CreatedDate=DateTime.Now, ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-16", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+            //            new Product(){Name = "Product 17",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-17", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+            //            new Product(){Name = "Product 18",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-18", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+            //            new Product(){Name = "Product 19",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-19", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
+            //            new Product(){Name = "Product 20",CreatedDate=DateTime.Now,ThumbnailImage="/client-side/images/products/product-1.jpg",SeoAlias = "san-pham-20", TypeId = 1, SeoPageTitle = "", ModifiedDate = DateTime.Now,Price = 1000,Status = Status.Active},
             //    });
             //}
+
+            if (_context.Footers.Count() == 0)
+            {
+                string content = "Footer";
+                _context.Footers.Add(new Footer()
+                {
+                    Name = "Footer chính",
+                    Content = content
+                });
+            }
 
             //if (_context.Colors.Count() == 0)
             //{
@@ -170,45 +200,45 @@ namespace MyWebCoreApp.Data.EF
             //    _context.Colors.AddRange(listColor);
             //}
 
-            //if (_context.AdvertisementPages.Count() == 0)
-            //{
-            //    List<AdvertisementPage> pages = new List<AdvertisementPage>()
-            //    {
-            //        new AdvertisementPage() {Id="home", Name="Home",AdvertisementPositions = new List<AdvertisementPosition>(){
-            //            new AdvertisementPosition(){Id="home-left",Name="Bên trái"}
-            //        } },
-            //        new AdvertisementPage() {Id="product-cate", Name="Product category" ,
-            //            AdvertisementPositions = new List<AdvertisementPosition>(){
-            //            new AdvertisementPosition(){Id="product-cate-left",Name="Bên trái"}
-            //        }},
-            //        new AdvertisementPage() {Id="product-detail", Name="Product detail",
-            //            AdvertisementPositions = new List<AdvertisementPosition>(){
-            //            new AdvertisementPosition(){Id="product-detail-left",Name="Bên trái"}
-            //        } },
+            if (_context.AdvertisementPages.Count() == 0)
+            {
+                List<AdvertisementPage> pages = new List<AdvertisementPage>()
+                {
+                    new AdvertisementPage() {Id="home", Name="Home",AdvertisementPositions = new List<AdvertisementPosition>(){
+                        new AdvertisementPosition(){Id="home-left",Name="Bên trái"}
+                    } },
+                    new AdvertisementPage() {Id="product-cate", Name="Product category" ,
+                        AdvertisementPositions = new List<AdvertisementPosition>(){
+                        new AdvertisementPosition(){Id="product-cate-left",Name="Bên trái"}
+                    }},
+                    new AdvertisementPage() {Id="product-detail", Name="Product detail",
+                        AdvertisementPositions = new List<AdvertisementPosition>(){
+                        new AdvertisementPosition(){Id="product-detail-left",Name="Bên trái"}
+                    } },
 
-            //    };
-            //    _context.AdvertisementPages.AddRange(pages);
-            //}
+                };
+                _context.AdvertisementPages.AddRange(pages);
+            }
 
             //if (_context.Slides.Count() == 0)
             //{
             //    List<Slide> slides = new List<Slide>()
             //    {
-            //        new Slide() {Name="Slide 1",Image="/client-side/images/slider/slide-1.jpg",Url="#",DisplayOrder = 0,GroupAlias = "top",Status = true },
-            //        new Slide() {Name="Slide 2",Image="/client-side/images/slider/slide-2.jpg",Url="#",DisplayOrder = 1,GroupAlias = "top",Status = true },
-            //        new Slide() {Name="Slide 3",Image="/client-side/images/slider/slide-3.jpg",Url="#",DisplayOrder = 2,GroupAlias = "top",Status = true },
+            //        new Slide() {Name="Slide 1",Image="/client-side/images/slider/slide-1.jpg",Url="#",DisplayOrder = 0, GroupId = 1, Status = Status.Active, CreatedDate = DateTime.Now, ModifiedDate = DateTime.Now },
+            //        new Slide() {Name="Slide 2",Image="/client-side/images/slider/slide-2.jpg",Url="#",DisplayOrder = 1,GroupId = 1, Status = Status.Active, CreatedDate = DateTime.Now, ModifiedDate = DateTime.Now },
+            //        new Slide() {Name="Slide 3",Image="/client-side/images/slider/slide-3.jpg",Url="#",DisplayOrder = 2,GroupId = 1,Status = Status.Active, CreatedDate = DateTime.Now, ModifiedDate = DateTime.Now },
 
-            //        new Slide() {Name="Slide 1",Image="/client-side/images/brand1.png",Url="#",DisplayOrder = 1,GroupAlias = "brand",Status = true },
-            //        new Slide() {Name="Slide 2",Image="/client-side/images/brand2.png",Url="#",DisplayOrder = 2,GroupAlias = "brand",Status = true },
-            //        new Slide() {Name="Slide 3",Image="/client-side/images/brand3.png",Url="#",DisplayOrder = 3,GroupAlias = "brand",Status = true },
-            //        new Slide() {Name="Slide 4",Image="/client-side/images/brand4.png",Url="#",DisplayOrder = 4,GroupAlias = "brand",Status = true },
-            //        new Slide() {Name="Slide 5",Image="/client-side/images/brand5.png",Url="#",DisplayOrder = 5,GroupAlias = "brand",Status = true },
-            //        new Slide() {Name="Slide 6",Image="/client-side/images/brand6.png",Url="#",DisplayOrder = 6,GroupAlias = "brand",Status = true },
-            //        new Slide() {Name="Slide 7",Image="/client-side/images/brand7.png",Url="#",DisplayOrder = 7,GroupAlias = "brand",Status = true },
-            //        new Slide() {Name="Slide 8",Image="/client-side/images/brand8.png",Url="#",DisplayOrder = 8,GroupAlias = "brand",Status = true },
-            //        new Slide() {Name="Slide 9",Image="/client-side/images/brand9.png",Url="#",DisplayOrder = 9,GroupAlias = "brand",Status = true },
-            //        new Slide() {Name="Slide 10",Image="/client-side/images/brand10.png",Url="#",DisplayOrder = 10,GroupAlias = "brand",Status = true },
-            //        new Slide() {Name="Slide 11",Image="/client-side/images/brand11.png",Url="#",DisplayOrder = 11,GroupAlias = "brand",Status = true },
+            //        new Slide() {Name="Slide 1",Image="/client-side/images/brand1.png",Url="#",DisplayOrder = 1,GroupId = 1,Status = Status.Active, CreatedDate = DateTime.Now, ModifiedDate = DateTime.Now },
+            //        new Slide() {Name="Slide 2",Image="/client-side/images/brand2.png",Url="#",DisplayOrder = 2,GroupId = 1,Status = Status.Active, CreatedDate = DateTime.Now, ModifiedDate = DateTime.Now },
+            //        new Slide() {Name="Slide 3",Image="/client-side/images/brand3.png",Url="#",DisplayOrder = 3,GroupId = 1,Status = Status.Active, CreatedDate = DateTime.Now, ModifiedDate = DateTime.Now },
+            //        new Slide() {Name="Slide 4",Image="/client-side/images/brand4.png",Url="#",DisplayOrder = 4,GroupId = 1,Status = Status.Active, CreatedDate = DateTime.Now, ModifiedDate = DateTime.Now },
+            //        new Slide() {Name="Slide 5",Image="/client-side/images/brand5.png",Url="#",DisplayOrder = 5,GroupId = 1,Status = Status.Active, CreatedDate = DateTime.Now, ModifiedDate = DateTime.Now },
+            //        new Slide() {Name="Slide 6",Image="/client-side/images/brand6.png",Url="#",DisplayOrder = 6,GroupId = 1,Status = Status.Active, CreatedDate = DateTime.Now, ModifiedDate = DateTime.Now },
+            //        new Slide() {Name="Slide 7",Image="/client-side/images/brand7.png",Url="#",DisplayOrder = 7,GroupId = 1,Status = Status.Active, CreatedDate = DateTime.Now, ModifiedDate = DateTime.Now },
+            //        new Slide() {Name="Slide 8",Image="/client-side/images/brand8.png",Url="#",DisplayOrder = 8,GroupId = 1,Status = Status.Active, CreatedDate = DateTime.Now, ModifiedDate = DateTime.Now },
+            //        new Slide() {Name="Slide 9",Image="/client-side/images/brand9.png",Url="#",DisplayOrder = 9,GroupId = 1,Status = Status.Active, CreatedDate = DateTime.Now, ModifiedDate = DateTime.Now },
+            //        new Slide() {Name="Slide 10",Image="/client-side/images/brand10.png",Url="#",DisplayOrder = 10,GroupId = 1,Status = Status.Active, CreatedDate = DateTime.Now, ModifiedDate = DateTime.Now },
+            //        new Slide() {Name="Slide 11",Image="/client-side/images/brand11.png",Url="#",DisplayOrder = 11,GroupId = 1,Status = Status.Active, CreatedDate = DateTime.Now, ModifiedDate = DateTime.Now },
             //    };
             //    _context.Slides.AddRange(slides);
             //}
@@ -313,38 +343,62 @@ namespace MyWebCoreApp.Data.EF
                 _context.PostCategories.AddRange(listPostCategory);
             }
 
-            //if (!_context.SystemConfigs.Any(x => x.Id == "HomeTitle"))
-            //{
-            //    _context.SystemConfigs.Add(new SystemConfig()
-            //    {
-            //        Id = "HomeTitle",
-            //        Name = "Home's title",
-            //        Value1 = "Tedu Shop home",
-            //        Status = Status.Active
-            //    });
-            //}
+            if (_context.GroupSlides.Count() == 0)
+            {
+                List<GroupSlide> listGroupSlide = new List<GroupSlide>()
+                {
+                    new GroupSlide(){Name = "Group 1", Status = Status.Active,
+                        Slides = new List<Slide>()
+                        {
+                            new Slide() {Name="Slide 1",Image="/client-side/images/brand1.png",Url="#",DisplayOrder = 1,Status = Status.Active, CreatedDate = DateTime.Now, ModifiedDate = DateTime.Now },
+                            new Slide() {Name="Slide 2",Image="/client-side/images/brand2.png",Url="#",DisplayOrder = 2,Status = Status.Active, CreatedDate = DateTime.Now, ModifiedDate = DateTime.Now },
+                            new Slide() {Name="Slide 3",Image="/client-side/images/brand3.png",Url="#",DisplayOrder = 3,Status = Status.Active, CreatedDate = DateTime.Now, ModifiedDate = DateTime.Now },
+                            new Slide() {Name="Slide 4",Image="/client-side/images/brand4.png",Url="#",DisplayOrder = 4,Status = Status.Active, CreatedDate = DateTime.Now, ModifiedDate = DateTime.Now },
+                            new Slide() {Name="Slide 5",Image="/client-side/images/brand5.png",Url="#",DisplayOrder = 5,Status = Status.Active, CreatedDate = DateTime.Now, ModifiedDate = DateTime.Now },
+                            new Slide() {Name="Slide 6",Image="/client-side/images/brand6.png",Url="#",DisplayOrder = 6,Status = Status.Active, CreatedDate = DateTime.Now, ModifiedDate = DateTime.Now },
+                            new Slide() {Name="Slide 7",Image="/client-side/images/brand7.png",Url="#",DisplayOrder = 7,Status = Status.Active, CreatedDate = DateTime.Now, ModifiedDate = DateTime.Now },
+                            new Slide() {Name="Slide 8",Image="/client-side/images/brand8.png",Url="#",DisplayOrder = 8,Status = Status.Active, CreatedDate = DateTime.Now, ModifiedDate = DateTime.Now },
+                            new Slide() {Name="Slide 9",Image="/client-side/images/brand9.png",Url="#",DisplayOrder = 9,Status = Status.Active, CreatedDate = DateTime.Now, ModifiedDate = DateTime.Now },
+                            new Slide() {Name="Slide 10",Image="/client-side/images/brand10.png",Url="#",DisplayOrder = 10,Status = Status.Active, CreatedDate = DateTime.Now, ModifiedDate = DateTime.Now },
+                            new Slide() {Name="Slide 11",Image="/client-side/images/brand11.png",Url="#",DisplayOrder = 11,Status = Status.Active, CreatedDate = DateTime.Now, ModifiedDate = DateTime.Now },
+                        }
+                    }
+                };
+                _context.GroupSlides.AddRange(listGroupSlide);
+            }
 
-            //if (!_context.SystemConfigs.Any(x => x.Id == "HomeMetaKeyword"))
-            //{
-            //    _context.SystemConfigs.Add(new SystemConfig()
-            //    {
-            //        Id = "HomeMetaKeyword",
-            //        Name = "Home Keyword",
-            //        Value1 = "shopping, sales",
-            //        Status = Status.Active
-            //    });
-            //}
+            if (!_context.SystemConfigs.Any(x => x.Id == "HomeTitle"))
+            {
+                _context.SystemConfigs.Add(new SystemConfig()
+                {
+                    Id = "HomeTitle",
+                    Name = "Home's title",
+                    Value1 = "Tedu Shop home",
+                    Status = Status.Active
+                });
+            }
 
-            //if (!_context.SystemConfigs.Any(x => x.Id == "HomeMetaDescription"))
-            //{
-            //    _context.SystemConfigs.Add(new SystemConfig()
-            //    {
-            //        Id = "HomeMetaDescription",
-            //        Name = "Home Description",
-            //        Value1 = "Home tedu",
-            //        Status = Status.Active
-            //    });
-            //}
+            if (!_context.SystemConfigs.Any(x => x.Id == "HomeMetaKeyword"))
+            {
+                _context.SystemConfigs.Add(new SystemConfig()
+                {
+                    Id = "HomeMetaKeyword",
+                    Name = "Home Keyword",
+                    Value1 = "shopping, sales",
+                    Status = Status.Active
+                });
+            }
+
+            if (!_context.SystemConfigs.Any(x => x.Id == "HomeMetaDescription"))
+            {
+                _context.SystemConfigs.Add(new SystemConfig()
+                {
+                    Id = "HomeMetaDescription",
+                    Name = "Home Description",
+                    Value1 = "Home tedu",
+                    Status = Status.Active
+                });
+            }
 
             await _context.SaveChangesAsync();
         }

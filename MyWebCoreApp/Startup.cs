@@ -7,12 +7,15 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using MyWebCoreApp.Application.Implementations;
 using MyWebCoreApp.Application.Interfaces;
 using MyWebCoreApp.Data.EF;
 using MyWebCoreApp.Data.EF.Repositories;
 using MyWebCoreApp.Data.Entities;
 using MyWebCoreApp.Data.IRepositories;
+using MyWebCoreApp.Helpers;
+using Newtonsoft.Json.Serialization;
 using System;
 
 namespace MyWebCoreApp
@@ -73,15 +76,25 @@ namespace MyWebCoreApp
 
             services.AddScoped<DbInitializer>();
 
-            services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
-            services.AddTransient<IProductCategoryService, ProductCategoryService>();
+            services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimsPrincipalFactory>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc().AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
+
+            //Repositories
+            services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
+            services.AddTransient<IFunctionRepository, FunctionRepository>();
+
+            //Services
+            services.AddTransient<IProductCategoryService, ProductCategoryService>();
+            services.AddTransient<IFunctionService, FunctionService>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            loggerFactory.AddFile("Logs/dkteam-{Date}.txt");
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -100,10 +113,13 @@ namespace MyWebCoreApp
             app.UseAuthentication();
 
             app.UseMvc(routes =>
-            {
+            {             
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
+                routes.MapRoute(
+                 name: "areaRoute",
+                 template: "{area=Admin}/{controller=Home}/{action=Index}/{id?}");
             });
 
         }
