@@ -16,6 +16,51 @@ namespace MyWebCoreApp.Data.Entities
             PostTags = new List<PostTag>();
         }
 
+        public Post(int id, string name, string description, string content, string thumbnailImage, string image, bool? homeFlag, bool? hotFlag, string tags, int? viewCount, int categoryId,
+          Status status, bool isDeleted, string seoPageTitle, string seoAlias, string seoKeywords, string seoDescription)
+        {
+            Id = id;
+            Name = name;
+            Description = description;
+            Content = content;
+            ThumbnailImage = thumbnailImage;
+            Image = image;
+            HomeFlag = homeFlag;
+            HotFlag = hotFlag;
+            Tags = tags;
+            ViewCount = viewCount;
+            CategoryId = categoryId;
+            Status = status;
+            IsDeleted = isDeleted;
+            SeoPageTitle = seoPageTitle;
+            SeoAlias = seoAlias;
+            SeoDescription = seoDescription;
+            SeoKeywords = seoKeywords;
+            PostTags = new List<PostTag>();
+        }
+
+        public Post(string name, string description, string content, string thumbnailImage, string image, bool? homeFlag, bool? hotFlag, string tags, int? viewCount, int categoryId, 
+            Status status, bool isDeleted, string seoPageTitle, string seoAlias, string seoKeywords, string seoDescription)
+        {
+            Name = name;
+            Description = description;
+            Content = content;
+            ThumbnailImage = thumbnailImage;
+            Image = image;
+            HomeFlag = homeFlag;
+            HotFlag = hotFlag;
+            Tags = tags;
+            ViewCount = viewCount;
+            CategoryId = categoryId;
+            Status = status;
+            IsDeleted = isDeleted;
+            SeoPageTitle = seoPageTitle;
+            SeoAlias = seoAlias;
+            SeoDescription = seoDescription;
+            SeoKeywords = seoKeywords;
+            PostTags = new List<PostTag>();
+        }
+
         [StringLength(255)]
         [Required]
         public string Name { get; set; }

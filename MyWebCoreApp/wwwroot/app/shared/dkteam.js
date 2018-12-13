@@ -110,9 +110,9 @@
             $('.dv-loading')
                 .addClass('hide');
     },
-    getStatus: function () {
+    getStatus: function (status) {
         if (status == 1)
-            return '<span class="badge bg-green">Kích hoạt</span>';
+            return '<span class="badge bg-green">Hiển thị</span>';
         else
             return '<span class="badge bg-red">Khoá</span>';
     },

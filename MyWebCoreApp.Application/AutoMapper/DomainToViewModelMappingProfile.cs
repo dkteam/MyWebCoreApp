@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using MyWebCoreApp.Application.ViewModels.Post;
 using MyWebCoreApp.Application.ViewModels.Product;
 using MyWebCoreApp.Application.ViewModels.System;
 using MyWebCoreApp.Data.Entities;
@@ -15,6 +16,8 @@ namespace MyWebCoreApp.Application.AutoMapper
             CreateMap<ProductCategory, ProductCategoryViewModel>();
             CreateMap<Function, FunctionViewModel>();
             CreateMap<Product, ProductViewModel>();
+            CreateMap<Post, PostViewModel>();
+            CreateMap<PostCategory, PostCategoryViewModel>();
         }
     }
 }

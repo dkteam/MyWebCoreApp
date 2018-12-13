@@ -15,6 +15,7 @@ using MyWebCoreApp.Data.EF.Repositories;
 using MyWebCoreApp.Data.Entities;
 using MyWebCoreApp.Data.IRepositories;
 using MyWebCoreApp.Helpers;
+using MyWebCoreApp.Infrastructure.Interfaces;
 using Newtonsoft.Json.Serialization;
 using System;
 
@@ -81,14 +82,20 @@ namespace MyWebCoreApp
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddMvc().AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
 
+            services.AddTransient(typeof(IUnitOfWork), typeof(EFUnitOfWork));
+            services.AddTransient(typeof(IRepository<,>), typeof(EFRepository<,>));
+
             //Repositories
             services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
             services.AddTransient<IFunctionRepository, FunctionRepository>();
+            services.AddTransient<IPostRepository, PostRepository>();
+            services.AddTransient<IPostCategoryRepository, PostCategoryRepository>();
 
             //Services
             services.AddTransient<IProductCategoryService, ProductCategoryService>();
             services.AddTransient<IFunctionService, FunctionService>();
-
+            services.AddTransient<IPostService, PostService>();
+            services.AddTransient<IPostCategoryService, PostCategoryService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
