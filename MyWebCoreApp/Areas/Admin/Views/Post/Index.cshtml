@@ -11,18 +11,25 @@
 }
 @section TableResponsiveScripts{
     @*<script src="~/node_modules/datatables.net/js/jquery.dataTables.js"></script>
-    <script src="~/node_modules/datatables.net-bs/js/dataTables.bootstrap.js"></script>
-    <script src="~/node_modules/datatables.net-buttons/js/dataTables.buttons.js"></script>
-    <script src="~/node_modules/datatables.net-buttons-bs/js/buttons.bootstrap.js"></script>*@
+        <script src="~/node_modules/datatables.net-bs/js/dataTables.bootstrap.js"></script>
+        <script src="~/node_modules/datatables.net-buttons/js/dataTables.buttons.js"></script>
+        <script src="~/node_modules/datatables.net-buttons-bs/js/buttons.bootstrap.js"></script>*@
     @*<script src="~/node_modules/datatables.net-buttons/js/buttons.flash.js"></script>
-    <script src="~/node_modules/datatables.net-buttons/js/buttons.html5.js"></script>
-    <script src="~/node_modules/datatables.net-buttons/js/buttons.print.js"></script>
-    <script src="~/node_modules/datatables.net-buttons/js/buttons.colVis.js"></script>*@
+        <script src="~/node_modules/datatables.net-buttons/js/buttons.html5.js"></script>
+        <script src="~/node_modules/datatables.net-buttons/js/buttons.print.js"></script>
+        <script src="~/node_modules/datatables.net-buttons/js/buttons.colVis.js"></script>*@
     <script src="~/node_modules/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
     <script src="~/node_modules/datatables.net-responsive-bs/js/responsive.bootstrap.min.js"></script>
     @*<script src="~/node_modules/datatables.net-scroller/js/dataTables.scroller.min.js"></script>*@
 }
+
+@section Styles{
+    <link href="~/node_modules/jquery-easyui/css/easyui.css" rel="stylesheet" />
+    @*<link href="~/node_modules/ckeditor/skins/moono/editor.css" rel="stylesheet" />*@
+}
 @section Scripts{
+    <script src="~/node_modules/ckeditor/ckeditor.js"></script>
+    <script src="~/node_modules/jquery-easyui/js/jquery.easyui.min.js"></script>
     <script src="~/app/controllers/post/index.js"></script>
     <script>
         var postController = new postController();
@@ -32,7 +39,7 @@
 <div class="col-md-12 col-sm-12 col-xs-12">
     <div class="x_panel">
         <div class="x_title">
-            <h2>Responsive example<small>Users</small></h2>
+            <h2>Posts<small>All posts</small></h2>
             <ul class="nav navbar-right panel_toolbox">
                 <li>
                     <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
@@ -76,7 +83,7 @@
                     <button id="btnCreate" type="button" class="btn btn-success">Create</button>
                 </div>
             </div>
-         
+
             <table id="datatable-responsive" class="table table-striped jambo_table dt-responsive nowrap" cellspacing="0" width="100%">
                 <thead>
                     <tr>
@@ -130,8 +137,10 @@
         <td>{{Views}}</td>
         <td>{{{Status}}}</td>
         <td>
-            <button class="btn btn-default btn-sm"><i class="fa fa-pencil"></i></button>
-            <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
+            <button class="btn btn-default btn-sm btn-edit" data-id="{{Id}}"><i class="fa fa-pencil"></i></button>
+            <button class="btn btn-danger btn-sm btn-delete" data-id="{{Id}}"><i class="fa fa-trash"></i></button>
         </td>
     </tr>
 </script>
+
+@Html.Partial("_AddEditModal.cshtml")

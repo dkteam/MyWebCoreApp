@@ -90,6 +90,8 @@ namespace MyWebCoreApp
             services.AddTransient<IFunctionRepository, FunctionRepository>();
             services.AddTransient<IPostRepository, PostRepository>();
             services.AddTransient<IPostCategoryRepository, PostCategoryRepository>();
+            services.AddTransient<ITagRepository, TagRepository>();
+            services.AddTransient<IPostTagRepository, PostTagRepository>();
 
             //Services
             services.AddTransient<IProductCategoryService, ProductCategoryService>();

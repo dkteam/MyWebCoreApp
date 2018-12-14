@@ -48,7 +48,7 @@
                     $('#txtSeoKeywordM').val(data.SeoKeywords);
                     $('#txtSeoDescriptionM').val(data.SeoDescription);
                     $('#txtSeoPageTitleM').val(data.SeoPageTitle);
-                    $('#txtSeoAliasM').val(data.SeoAlias);
+                    $('#txtAliasM').val(data.SeoAlias);
 
                     $('#ckStatusM').prop('checked', data.Status == 1);
                     $('#ckShowHomeM').prop('checked', data.HomeFlag);
@@ -239,7 +239,7 @@
     function resetFormMaintainance() {
         $('#hidIdM').val(0);
         $('#txtNameM').val('');
-        initTreeDropDownCategory('');
+        //initTreeDropDownCategory('');
 
         $('#txtDescM').val('');
         $('#txtOrderM').val('');
@@ -249,7 +249,7 @@
         $('#txtMetakeywordM').val('');
         $('#txtMetaDescriptionM').val('');
         $('#txtSeoPageTitleM').val('');
-        $('#txtSeoAliasM').val('');
+        $('#txtAliasM').val('');
 
         $('#ckStatusM').prop('checked', true);
         $('#ckShowHomeM').prop('checked', false);

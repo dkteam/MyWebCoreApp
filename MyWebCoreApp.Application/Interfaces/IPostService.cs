@@ -11,5 +11,15 @@ namespace MyWebCoreApp.Application.Interfaces
         List<PostViewModel> GetAll();
 
         PageResult<PostViewModel> GetAllPaging(int? categoryId, string keyword, int page, int pageSize);
+
+        PostViewModel GetById(int id);
+
+        PostViewModel Add(PostViewModel post);
+
+        void Update(PostViewModel post);
+
+        void Delete(int id);
+
+        void Save();
     }
 }

@@ -15,6 +15,8 @@ namespace MyWebCoreApp.Application.AutoMapper
                 .ConstructUsing(c => new Product(c.Name, c.Description, c.Content, c.HomeFlag, c.HotFlag, c.ThumbnailImage, c.ImageList, c.Price, c.PromotionPrice, c.Tags, c.ViewCount, c.Domain, c.TypeId, c.Status, c.SeoPageTitle, c.SeoAlias, c.SeoKeywords, c.SeoDescription));
             CreateMap<PostViewModel, Post>()
                 .ConstructUsing(c => new Post(c.Name, c.Description, c.Content, c.ThumbnailImage, c.Image, c.HomeFlag, c.HotFlag, c.Tags, c.ViewCount, c.CategoryId, c.Status, c.IsDeleted, c.SeoPageTitle, c.SeoAlias, c.SeoKeywords, c.SeoDescription));
+            CreateMap<PostCategoryViewModel, PostCategory>()
+                .ConstructUsing(c => new PostCategory(c.Name, c.Description, c.ParentId, c.ThumbnailImage, c.HomeFlag, c.IsDeleted, c.Status, c.SeoPageTitle, c.SeoAlias, c.SeoKeywords, c.SeoDescription, c.SortOrder));
         }
     }
 }

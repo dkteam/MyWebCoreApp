@@ -23,6 +23,6 @@
     "twbs-pagination": "~1.4.1",
     "jquery-easyui": "~1.5.21",
     "alertifyjs": "~1.11.2",
-    "ckeditor": "~4.11.1"
+    "ckeditor": "~4.7.3"
   }
 }
