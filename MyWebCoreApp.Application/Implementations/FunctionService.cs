@@ -1,10 +1,15 @@
-﻿using AutoMapper.QueryableExtensions;
+﻿using AutoMapper;
+using AutoMapper.QueryableExtensions;
 using Microsoft.EntityFrameworkCore;
 using MyWebCoreApp.Application.Interfaces;
 using MyWebCoreApp.Application.ViewModels.System;
+using MyWebCoreApp.Data.Entities;
+using MyWebCoreApp.Data.Enums;
 using MyWebCoreApp.Data.IRepositories;
+using MyWebCoreApp.Infrastructure.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,16 +17,40 @@ namespace MyWebCoreApp.Application.Implementations
 {
     public class FunctionService : IFunctionService
     {
-        IFunctionRepository _functionRepository;
+        private IFunctionRepository _functionRepository;
+        private IUnitOfWork _unitOfWork;
+        private readonly IMapper _mapper;
 
-        public FunctionService(IFunctionRepository functionRepository)
+        public FunctionService(IMapper mapper,
+            IFunctionRepository functionRepository,
+            IUnitOfWork unitOfWork)
         {
-            this._functionRepository = functionRepository;
+            _functionRepository = functionRepository;
+            _unitOfWork = unitOfWork;
+            _mapper = mapper;
         }
 
-        public void Dispose()
+
+        public bool CheckExistedId(string id)
         {
-            GC.SuppressFinalize(this);
+            return _functionRepository.FindById(id) != null;
+        }
+
+        public void Add(FunctionViewModel functionVm)
+        {
+            var function = _mapper.Map<Function>(functionVm);
+            _functionRepository.Add(function);
+        }
+
+        public void Delete(string id)
+        {
+            _functionRepository.Remove(id);
+        }
+
+        public FunctionViewModel GetById(string id)
+        {
+            var function = _functionRepository.FindSingle(x => x.Id == id);
+            return Mapper.Map<Function, FunctionViewModel>(function);
         }
 
         public Task<List<FunctionViewModel>> GetAll()
@@ -29,9 +58,64 @@ namespace MyWebCoreApp.Application.Implementations
             return _functionRepository.FindAll().ProjectTo<FunctionViewModel>().ToListAsync();
         }
 
-        public List<FunctionViewModel> GetAllByPermission(Guid userId)
+        public Task<List<FunctionViewModel>> GetAll(string filter)
         {
-            throw new NotImplementedException();
+            var query = _functionRepository.FindAll(x => x.Status == Status.Active);
+            if (!string.IsNullOrEmpty(filter))
+                query = query.Where(x => x.Name.Contains(filter));
+            return query.OrderBy(x => x.ParentId).ProjectTo<FunctionViewModel>().ToListAsync();
+        }
+
+        public IEnumerable<FunctionViewModel> GetAllWithParentId(string parentId)
+        {
+            return _functionRepository.FindAll(x => x.ParentId == parentId).ProjectTo<FunctionViewModel>();
+        }
+        public void Save()
+        {
+            _unitOfWork.Commit();
+        }
+
+        public void Update(FunctionViewModel functionVm)
+        {
+
+            var functionDb = _functionRepository.FindById(functionVm.Id);
+            var function = _mapper.Map<Function>(functionVm);
+        }
+
+        public void ReOrder(string sourceId, string targetId)
+        {
+
+            var source = _functionRepository.FindById(sourceId);
+            var target = _functionRepository.FindById(targetId);
+            int tempOrder = source.SortOrder.Value;
+
+            source.SortOrder = target.SortOrder;
+            target.SortOrder = tempOrder;
+
+            _functionRepository.Update(source);
+            _functionRepository.Update(target);
+
+        }
+
+        public void UpdateParentId(string sourceId, string targetId, Dictionary<string, int> items)
+        {
+            //Update parent id for source
+            var category = _functionRepository.FindById(sourceId);
+            category.ParentId = targetId;
+            _functionRepository.Update(category);
+
+            //Get all sibling
+            var sibling = _functionRepository.FindAll(x => items.ContainsKey(x.Id));
+            foreach (var child in sibling)
+            {
+                child.SortOrder = items[child.Id];
+                _functionRepository.Update(child);
+            }
+        }
+
+        public void Dispose()
+        {
+            GC.SuppressFinalize(this);
         }
     }
 }

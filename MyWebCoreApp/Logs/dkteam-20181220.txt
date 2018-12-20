@@ -1,0 +1,488 @@
+2018-12-20T09:06:49.7128518+07:00 0HLJ63V6MG50I:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44310/   (ca22a1cb)
+2018-12-20T09:06:49.7128518+07:00 0HLJ63V6MG50K:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44310/admin/login   (ca22a1cb)
+2018-12-20T09:06:49.7128518+07:00 0HLJ63V6MG50J:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:9273/  0 (ca22a1cb)
+2018-12-20T09:06:49.7575091+07:00 0HLJ63V6MG50J:00000001 [INF] Request finished in 43.1736ms 200  (791a596a)
+2018-12-20T09:06:50.4598027+07:00 0HLJ63V6MG50I:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing action "MyWebCoreApp.Controllers.HomeController.Index (MyWebCoreApp)" (a44c0341)
+2018-12-20T09:06:50.4598027+07:00 0HLJ63V6MG50K:00000001 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Login\"}". Executing action "MyWebCoreApp.Areas.Admin.Controllers.LoginController.Index (MyWebCoreApp)" (a44c0341)
+2018-12-20T09:06:50.4999371+07:00 0HLJ63V6MG50I:00000001 [INF] Executing action method "MyWebCoreApp.Controllers.HomeController.Index (MyWebCoreApp)" - Validation state: Valid (dad538d7)
+2018-12-20T09:06:50.4999326+07:00 0HLJ63V6MG50K:00000001 [INF] Executing action method "MyWebCoreApp.Areas.Admin.Controllers.LoginController.Index (MyWebCoreApp)" - Validation state: Valid (dad538d7)
+2018-12-20T09:06:50.5111384+07:00 0HLJ63V6MG50I:00000001 [INF] Executed action method "MyWebCoreApp.Controllers.HomeController.Index (MyWebCoreApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.7254ms. (50a9e262)
+2018-12-20T09:06:50.5111384+07:00 0HLJ63V6MG50K:00000001 [INF] Executed action method "MyWebCoreApp.Areas.Admin.Controllers.LoginController.Index (MyWebCoreApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.7257ms. (50a9e262)
+2018-12-20T09:06:50.5599834+07:00 0HLJ63V6MG50K:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-20T09:06:50.5655883+07:00 0HLJ63V6MG50I:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-20T09:06:50.6815677+07:00 0HLJ63V6MG50K:00000001 [INF] Executed ViewResult - view "Index" executed in 155.2176ms. (f66409e9)
+2018-12-20T09:06:50.6945290+07:00 0HLJ63V6MG50K:00000001 [INF] Executed action "MyWebCoreApp.Areas.Admin.Controllers.LoginController.Index (MyWebCoreApp)" in 224.1389ms (afa2e885)
+2018-12-20T09:06:50.7095204+07:00 0HLJ63V6MG50J:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44310/admin/login   (ca22a1cb)
+2018-12-20T09:06:50.7205070+07:00 0HLJ63V6MG50K:00000001 [INF] Request finished in 1017.3589ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-20T09:06:50.7206344+07:00 0HLJ63V6MG50J:00000002 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Login\"}". Executing action "MyWebCoreApp.Areas.Admin.Controllers.LoginController.Index (MyWebCoreApp)" (a44c0341)
+2018-12-20T09:06:50.7267039+07:00 0HLJ63V6MG50J:00000002 [INF] Executing action method "MyWebCoreApp.Areas.Admin.Controllers.LoginController.Index (MyWebCoreApp)" - Validation state: Valid (dad538d7)
+2018-12-20T09:06:50.7322499+07:00 0HLJ63V6MG50J:00000002 [INF] Executed action method "MyWebCoreApp.Areas.Admin.Controllers.LoginController.Index (MyWebCoreApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0326ms. (50a9e262)
+2018-12-20T09:06:50.7379061+07:00 0HLJ63V6MG50J:00000002 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-20T09:06:50.7457452+07:00 0HLJ63V6MG50J:00000002 [INF] Executed ViewResult - view "Index" executed in 7.6213ms. (f66409e9)
+2018-12-20T09:06:50.7518255+07:00 0HLJ63V6MG50J:00000002 [INF] Executed action "MyWebCoreApp.Areas.Admin.Controllers.LoginController.Index (MyWebCoreApp)" in 25.8074ms (afa2e885)
+2018-12-20T09:06:50.7645313+07:00 0HLJ63V6MG50J:00000002 [INF] Request finished in 48.9204ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-20T09:06:50.7966899+07:00 0HLJ63V6MG50K:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44310/node_modules/alertifyjs/build/css/alertify.min.css   (ca22a1cb)
+2018-12-20T09:06:50.8097118+07:00 0HLJ63V6MG50N:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44310/lib/jquery/dist/jquery.min.js   (ca22a1cb)
+2018-12-20T09:06:50.8135272+07:00 0HLJ63V6MG50J:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44310/node_modules/nprogress/nprogress.js   (ca22a1cb)
+2018-12-20T09:06:50.8181544+07:00 0HLJ63V6MG50M:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44310/admin-site/css/custom.min.css   (ca22a1cb)
+2018-12-20T09:06:50.8223721+07:00 0HLJ63V6MG50L:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44310/node_modules/animate.css/animate.min.css   (ca22a1cb)
+2018-12-20T09:06:50.8283658+07:00 0HLJ63V6MG50O:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44310/node_modules/alertifyjs/build/alertify.min.js   (ca22a1cb)
+2018-12-20T09:06:50.8548742+07:00 0HLJ63V6MG50P:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44310/lib/jquery-validation/dist/jquery.validate.min.js   (ca22a1cb)
+2018-12-20T09:06:50.8649185+07:00 0HLJ63V6MG50Q:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44310/lib/jquery-validation/dist/additional-methods.min.js   (ca22a1cb)
+2018-12-20T09:06:50.8888193+07:00 0HLJ63V6MG50I:00000001 [INF] Executed ViewResult - view "Index" executed in 367.1343ms. (f66409e9)
+2018-12-20T09:06:50.8935131+07:00 0HLJ63V6MG50I:00000001 [INF] Executed action "MyWebCoreApp.Controllers.HomeController.Index (MyWebCoreApp)" in 428.6697ms (afa2e885)
+2018-12-20T09:06:50.8975350+07:00 0HLJ63V6MG50I:00000001 [INF] Request finished in 1200.3591ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-20T09:06:50.9003500+07:00 0HLJ63V6MG50R:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44310/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2018-12-20T09:06:50.9217132+07:00 0HLJ63V6MG50K:00000002 [INF] Sending file. Request path: '"/node_modules/alertifyjs/build/css/alertify.min.css"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\node_modules\alertifyjs\build\css\alertify.min.css"' (27b0a520)
+2018-12-20T09:06:50.9317076+07:00 0HLJ63V6MG50K:00000002 [INF] Request finished in 160.4113ms 200 text/css (791a596a)
+2018-12-20T09:06:50.9369959+07:00 0HLJ63V6MG50S:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44310/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js   (ca22a1cb)
+2018-12-20T09:06:50.9427146+07:00 0HLJ63V6MG50P:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.min.js"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js"' (27b0a520)
+2018-12-20T09:06:50.9504830+07:00 0HLJ63V6MG50P:00000001 [INF] Request finished in 115.6435ms 200 application/javascript (791a596a)
+2018-12-20T09:06:50.9557144+07:00 0HLJ63V6MG50J:00000003 [INF] Sending file. Request path: '"/node_modules/nprogress/nprogress.js"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\node_modules\nprogress\nprogress.js"' (27b0a520)
+2018-12-20T09:06:50.9614693+07:00 0HLJ63V6MG50M:00000001 [INF] Sending file. Request path: '"/admin-site/css/custom.min.css"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\admin-site\css\custom.min.css"' (27b0a520)
+2018-12-20T09:06:50.9657137+07:00 0HLJ63V6MG50J:00000003 [INF] Request finished in 187.6542ms 200 application/javascript (791a596a)
+2018-12-20T09:06:50.9815075+07:00 0HLJ63V6MG50M:00000001 [INF] Request finished in 185.6238ms 200 text/css (791a596a)
+2018-12-20T09:06:51.0339108+07:00 0HLJ63V6MG50R:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/localization/messages_vi.js"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\lib\jquery-validation\localization\messages_vi.js"' (27b0a520)
+2018-12-20T09:06:51.0394451+07:00 0HLJ63V6MG50U:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44310/app/shared/dkteam.js   (ca22a1cb)
+2018-12-20T09:06:51.0460725+07:00 0HLJ63V6MG50R:00000001 [INF] Request finished in 136.3206ms 200 application/javascript (791a596a)
+2018-12-20T09:06:51.0563440+07:00 0HLJ63V6MG50S:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js"' (27b0a520)
+2018-12-20T09:06:51.0930068+07:00 0HLJ63V6MG50L:00000001 [INF] Sending file. Request path: '"/node_modules/animate.css/animate.min.css"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\node_modules\animate.css\animate.min.css"' (27b0a520)
+2018-12-20T09:06:51.0979416+07:00 0HLJ63V6MG50S:00000001 [INF] Request finished in 124.5433ms 200 application/javascript (791a596a)
+2018-12-20T09:06:51.1111799+07:00 0HLJ63V6MG50U:00000001 [INF] Sending file. Request path: '"/app/shared/dkteam.js"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\app\shared\dkteam.js"' (27b0a520)
+2018-12-20T09:06:51.1169617+07:00 0HLJ63V6MG50J:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44310/node_modules/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-12-20T09:06:51.1225135+07:00 0HLJ63V6MG50U:00000001 [INF] Request finished in 138.3268ms 200 application/javascript (791a596a)
+2018-12-20T09:06:51.1283094+07:00 0HLJ63V6MG50L:00000001 [INF] Request finished in 323.2385ms 200 text/css (791a596a)
+2018-12-20T09:06:51.1327443+07:00 0HLJ63V6MG50O:00000001 [INF] Sending file. Request path: '"/node_modules/alertifyjs/build/alertify.min.js"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\node_modules\alertifyjs\build\alertify.min.js"' (27b0a520)
+2018-12-20T09:06:51.1393203+07:00 0HLJ63V6MG50T:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44310/app/controllers/login/index.js   (ca22a1cb)
+2018-12-20T09:06:51.1463726+07:00 0HLJ63V6MG50O:00000001 [INF] Request finished in 320.5045ms 200 application/javascript (791a596a)
+2018-12-20T09:06:51.1509315+07:00 0HLJ63V6MG50N:00000001 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.min.js"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\lib\jquery\dist\jquery.min.js"' (27b0a520)
+2018-12-20T09:06:51.1598803+07:00 0HLJ63V6MG50N:00000001 [INF] Request finished in 375.1351ms 200 application/javascript (791a596a)
+2018-12-20T09:06:51.1882817+07:00 0HLJ63V6MG50T:00000001 [INF] Sending file. Request path: '"/app/controllers/login/index.js"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\app\controllers\login\index.js"' (27b0a520)
+2018-12-20T09:06:51.1998915+07:00 0HLJ63V6MG50T:00000001 [INF] Request finished in 233.0418ms 200 application/javascript (791a596a)
+2018-12-20T09:06:51.2032827+07:00 0HLJ63V6MG50Q:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/additional-methods.min.js"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\lib\jquery-validation\dist\additional-methods.min.js"' (27b0a520)
+2018-12-20T09:06:51.2097141+07:00 0HLJ63V6MG50Q:00000001 [INF] Request finished in 347.8931ms 200 application/javascript (791a596a)
+2018-12-20T09:06:51.2561510+07:00 0HLJ63V6MG50J:00000004 [INF] Sending file. Request path: '"/node_modules/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\node_modules\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2018-12-20T09:06:51.2600787+07:00 0HLJ63V6MG50J:00000004 [INF] Request finished in 158.3939ms 200 font/woff2 (791a596a)
+2018-12-20T09:06:52.3729537+07:00 0HLJ63V6MG50P:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44310/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-12-20T09:06:52.4016151+07:00 0HLJ63V6MG50P:00000002 [INF] Route matched with "{area = \"Admin\", action = \"Authen\", controller = \"Login\"}". Executing action "MyWebCoreApp.Areas.Admin.Controllers.LoginController.Authen (MyWebCoreApp)" (a44c0341)
+2018-12-20T09:06:52.4600781+07:00 0HLJ63V6MG50P:00000002 [INF] Executing action method "MyWebCoreApp.Areas.Admin.Controllers.LoginController.Authen (MyWebCoreApp)" with arguments (["MyWebCoreApp.Models.AccountViewModels.LoginViewModel"]) - Validation state: Valid (4e3479ed)
+2018-12-20T09:06:52.4730894+07:00 0HLJ63V6MG50P:00000002 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MyWebCoreApp.Data.EF " (9958f5bb)
+2018-12-20T09:06:52.5729078+07:00 0HLJ63V6MG50P:00000002 [INF] Executed DbCommand ("29"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[CreatedDate], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[ModifiedDate], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-12-20T09:06:52.8064806+07:00 0HLJ63V6MG50P:00000002 [INF] Executed DbCommand ("11"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-12-20T09:06:52.8640955+07:00 0HLJ63V6MG50P:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-12-20T09:06:52.8930328+07:00 0HLJ63V6MG50P:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-12-20T09:06:52.9201957+07:00 0HLJ63V6MG50P:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-12-20T09:06:52.9311033+07:00 0HLJ63V6MG50P:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-12-20T09:06:52.9455207+07:00 0HLJ63V6MG50P:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-12-20T09:06:52.9538060+07:00 0HLJ63V6MG50P:00000002 [INF] User logged in. (fdce0db4)
+2018-12-20T09:06:52.9614392+07:00 0HLJ63V6MG50P:00000002 [INF] Executed action method "MyWebCoreApp.Areas.Admin.Controllers.LoginController.Authen (MyWebCoreApp)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 497.8932ms. (50a9e262)
+2018-12-20T09:06:52.9775221+07:00 0HLJ63V6MG50P:00000002 [INF] Executing ObjectResult, writing value of type '"MyWebCoreApp.Utilities.Dtos.GenericResult"'. (8a1b66c8)
+2018-12-20T09:06:53.0486009+07:00 0HLJ63V6MG50P:00000002 [INF] Executed action "MyWebCoreApp.Areas.Admin.Controllers.LoginController.Authen (MyWebCoreApp)" in 643.4653ms (afa2e885)
+2018-12-20T09:06:53.0540883+07:00 0HLJ63V6MG50P:00000002 [INF] Request finished in 683.8125ms 200 application/json; charset=utf-8 (791a596a)
+2018-12-20T09:06:53.0621137+07:00 0HLJ63V6MG50R:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44310/Admin/Home/index   (ca22a1cb)
+2018-12-20T09:06:53.0747984+07:00 0HLJ63V6MG50R:00000002 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Home\"}". Executing action "MyWebCoreApp.Areas.Admin.Controllers.HomeController.Index (MyWebCoreApp)" (a44c0341)
+2018-12-20T09:06:53.0898694+07:00 0HLJ63V6MG50R:00000002 [INF] Authorization was successful. (0d575a54)
+2018-12-20T09:06:53.0938122+07:00 0HLJ63V6MG50R:00000002 [INF] Executing action method "MyWebCoreApp.Areas.Admin.Controllers.HomeController.Index (MyWebCoreApp)" - Validation state: Valid (dad538d7)
+2018-12-20T09:06:53.0985338+07:00 0HLJ63V6MG50R:00000002 [INF] Executed action method "MyWebCoreApp.Areas.Admin.Controllers.HomeController.Index (MyWebCoreApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 1.0378ms. (50a9e262)
+2018-12-20T09:06:53.1045481+07:00 0HLJ63V6MG50R:00000002 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-20T09:06:53.1807814+07:00 0HLJ63V6MG50R:00000002 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MyWebCoreApp.Data.EF " (9958f5bb)
+2018-12-20T09:06:53.2289226+07:00 0HLJ63V6MG50R:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoFunction].[IconCss], [dtoFunction].[Id], [dtoFunction].[Name], [dtoFunction].[ParentId], COALESCE([dtoFunction].[SortOrder], 0) AS [SortOrder], [dtoFunction].[Status], [dtoFunction].[URL]
+FROM [Functions] AS [dtoFunction]" (0723d8ff)
+2018-12-20T09:06:53.3498882+07:00 0HLJ63V6MG50R:00000002 [INF] Executed ViewResult - view "Index" executed in 244.7246ms. (f66409e9)
+2018-12-20T09:06:53.3803720+07:00 0HLJ63V6MG50R:00000002 [INF] Executed action "MyWebCoreApp.Areas.Admin.Controllers.HomeController.Index (MyWebCoreApp)" in 289.1422ms (afa2e885)
+2018-12-20T09:06:53.3849408+07:00 0HLJ63V6MG50K:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44310/Admin/Home/images/img.jpg   (ca22a1cb)
+2018-12-20T09:06:53.3901958+07:00 0HLJ63V6MG50O:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44310/node_modules/jquery/dist/jquery.min.js   (ca22a1cb)
+2018-12-20T09:06:53.3961959+07:00 0HLJ63V6MG50U:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44310/node_modules/chart.js/dist/Chart.min.js   (ca22a1cb)
+2018-12-20T09:06:53.4016857+07:00 0HLJ63V6MG50N:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44310/lib/bootstrap/dist/js/bootstrap.min.js   (ca22a1cb)
+2018-12-20T09:06:53.4055913+07:00 0HLJ63V6MG50R:00000002 [INF] Request finished in 332.0563ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-20T09:06:53.4324478+07:00 0HLJ63V6MG50Q:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44310/node_modules/fastclick/lib/fastclick.js   (ca22a1cb)
+2018-12-20T09:06:53.4635432+07:00 0HLJ63V6MG50K:00000003 [INF] Request finished in 33.8765ms 404  (791a596a)
+2018-12-20T09:06:53.4677070+07:00 0HLJ63V6MG50S:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44310/node_modules/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2018-12-20T09:06:53.4989008+07:00 0HLJ63V6MG50L:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44310/node_modules/jquery-sparkline/jquery.sparkline.min.js   (ca22a1cb)
+2018-12-20T09:06:53.5064814+07:00 0HLJ63V6MG50M:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44310/admin-site/css/custom.css   (ca22a1cb)
+2018-12-20T09:06:53.5832946+07:00 0HLJ63V6MG50T:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44310/node_modules/bootbox/bootbox.min.js   (ca22a1cb)
+2018-12-20T09:06:53.5966591+07:00 0HLJ63V6MG50L:00000002 [INF] Sending file. Request path: '"/node_modules/jquery-sparkline/jquery.sparkline.min.js"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\node_modules\jquery-sparkline\jquery.sparkline.min.js"' (27b0a520)
+2018-12-20T09:06:53.6005347+07:00 0HLJ63V6MG50N:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.min.js"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js"' (27b0a520)
+2018-12-20T09:06:53.6066672+07:00 0HLJ63V6MG50L:00000002 [INF] Request finished in 222.0837ms 200 application/javascript (791a596a)
+2018-12-20T09:06:53.6122129+07:00 0HLJ63V6MG50J:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44310/node_modules/twbs-pagination/jquery.twbsPagination.min.js   (ca22a1cb)
+2018-12-20T09:06:53.6193118+07:00 0HLJ63V6MG50N:00000002 [INF] Request finished in 221.9847ms 200 application/javascript (791a596a)
+2018-12-20T09:06:53.6326986+07:00 0HLJ63V6MG50P:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44310/admin-site/js/custom.min.js   (ca22a1cb)
+2018-12-20T09:06:53.6485011+07:00 0HLJ63V6MG510:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44310/node_modules/mustache/mustache.min.js   (ca22a1cb)
+2018-12-20T09:06:53.6670600+07:00 0HLJ63V6MG50Q:00000002 [INF] Sending file. Request path: '"/node_modules/fastclick/lib/fastclick.js"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\node_modules\fastclick\lib\fastclick.js"' (27b0a520)
+2018-12-20T09:06:53.6725028+07:00 0HLJ63V6MG50V:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44310/node_modules/moment/min/moment.min.js   (ca22a1cb)
+2018-12-20T09:06:53.6804517+07:00 0HLJ63V6MG50Q:00000002 [INF] Request finished in 286.9817ms 200 application/javascript (791a596a)
+2018-12-20T09:06:53.6871237+07:00 0HLJ63V6MG50S:00000002 [INF] Sending file. Request path: '"/node_modules/bootstrap-daterangepicker/daterangepicker.js"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\node_modules\bootstrap-daterangepicker\daterangepicker.js"' (27b0a520)
+2018-12-20T09:06:53.6944517+07:00 0HLJ63V6MG50M:00000002 [INF] The file "/admin-site/css/custom.css" was not modified (f1f8d725)
+2018-12-20T09:06:53.7007460+07:00 0HLJ63V6MG50O:00000002 [INF] Sending file. Request path: '"/node_modules/jquery/dist/jquery.min.js"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\node_modules\jquery\dist\jquery.min.js"' (27b0a520)
+2018-12-20T09:06:53.7081954+07:00 0HLJ63V6MG50T:00000002 [INF] Sending file. Request path: '"/node_modules/bootbox/bootbox.min.js"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\node_modules\bootbox\bootbox.min.js"' (27b0a520)
+2018-12-20T09:06:53.7130118+07:00 0HLJ63V6MG50O:00000002 [INF] Request finished in 330.3193ms 200 application/javascript (791a596a)
+2018-12-20T09:06:53.7189038+07:00 0HLJ63V6MG50T:00000002 [INF] Request finished in 201.9307ms 200 application/javascript (791a596a)
+2018-12-20T09:06:53.7277106+07:00 0HLJ63V6MG510:00000001 [INF] Sending file. Request path: '"/node_modules/mustache/mustache.min.js"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\node_modules\mustache\mustache.min.js"' (27b0a520)
+2018-12-20T09:06:53.7355279+07:00 0HLJ63V6MG50S:00000002 [INF] Request finished in 281.5193ms 200 application/javascript (791a596a)
+2018-12-20T09:06:53.7516583+07:00 0HLJ63V6MG50U:00000002 [INF] Sending file. Request path: '"/node_modules/chart.js/dist/Chart.min.js"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\node_modules\chart.js\dist\Chart.min.js"' (27b0a520)
+2018-12-20T09:06:53.7564448+07:00 0HLJ63V6MG50P:00000003 [INF] Sending file. Request path: '"/admin-site/js/custom.min.js"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\admin-site\js\custom.min.js"' (27b0a520)
+2018-12-20T09:06:53.7608425+07:00 0HLJ63V6MG50U:00000002 [INF] Request finished in 373.275ms 200 application/javascript (791a596a)
+2018-12-20T09:06:53.7662931+07:00 0HLJ63V6MG50P:00000003 [INF] Request finished in 144.4096ms 200 application/javascript (791a596a)
+2018-12-20T09:06:53.7724588+07:00 0HLJ63V6MG510:00000001 [INF] Request finished in 110.1234ms 200 application/javascript (791a596a)
+2018-12-20T09:06:53.7764010+07:00 0HLJ63V6MG50V:00000001 [INF] Sending file. Request path: '"/node_modules/moment/min/moment.min.js"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\node_modules\moment\min\moment.min.js"' (27b0a520)
+2018-12-20T09:06:53.7822950+07:00 0HLJ63V6MG50J:00000005 [INF] Sending file. Request path: '"/node_modules/twbs-pagination/jquery.twbsPagination.min.js"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\node_modules\twbs-pagination\jquery.twbsPagination.min.js"' (27b0a520)
+2018-12-20T09:06:53.7871701+07:00 0HLJ63V6MG50V:00000001 [INF] Request finished in 158.1711ms 200 application/javascript (791a596a)
+2018-12-20T09:06:53.7913359+07:00 0HLJ63V6MG50J:00000005 [INF] Request finished in 181.9717ms 200 application/javascript (791a596a)
+2018-12-20T09:06:53.7947078+07:00 0HLJ63V6MG50M:00000002 [INF] Request finished in 325.3ms 304 text/css (791a596a)
+2018-12-20T09:06:53.8396209+07:00 0HLJ63V6MG50R:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44310/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-12-20T09:06:53.8612423+07:00 0HLJ63V6MG50R:00000003 [INF] Sending file. Request path: '"/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2018-12-20T09:06:53.8655904+07:00 0HLJ63V6MG50R:00000003 [INF] Request finished in 29.6143ms 200 font/woff2 (791a596a)
+2018-12-20T09:22:26.0537379+07:00 0HLJ647TOI0TF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44310/   (ca22a1cb)
+2018-12-20T09:22:26.0537379+07:00 0HLJ647TOI0TE:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:9273/  0 (ca22a1cb)
+2018-12-20T09:22:26.0974311+07:00 0HLJ647TOI0TE:00000001 [INF] Request finished in 43.1588ms 200  (791a596a)
+2018-12-20T09:22:26.3528870+07:00 0HLJ647TOI0TF:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing action "MyWebCoreApp.Controllers.HomeController.Index (MyWebCoreApp)" (a44c0341)
+2018-12-20T09:22:26.3687372+07:00 0HLJ647TOI0TF:00000001 [INF] Executing action method "MyWebCoreApp.Controllers.HomeController.Index (MyWebCoreApp)" - Validation state: Valid (dad538d7)
+2018-12-20T09:22:26.3771072+07:00 0HLJ647TOI0TF:00000001 [INF] Executed action method "MyWebCoreApp.Controllers.HomeController.Index (MyWebCoreApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.6061ms. (50a9e262)
+2018-12-20T09:22:26.4031610+07:00 0HLJ647TOI0TF:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-20T09:22:26.5544186+07:00 0HLJ647TOI0TF:00000001 [INF] Executed ViewResult - view "Index" executed in 164.9098ms. (f66409e9)
+2018-12-20T09:22:26.5586358+07:00 0HLJ647TOI0TF:00000001 [INF] Executed action "MyWebCoreApp.Controllers.HomeController.Index (MyWebCoreApp)" in 201.7224ms (afa2e885)
+2018-12-20T09:22:26.5712834+07:00 0HLJ647TOI0TF:00000001 [INF] Request finished in 528.5602ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-20T09:22:26.5883045+07:00 0HLJ647TOI0TH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44310/images/banner2.svg   (ca22a1cb)
+2018-12-20T09:22:26.5884971+07:00 0HLJ647TOI0TG:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44310/css/site.css   (ca22a1cb)
+2018-12-20T09:22:26.5929757+07:00 0HLJ647TOI0TI:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44310/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0   (ca22a1cb)
+2018-12-20T09:22:26.5988828+07:00 0HLJ647TOI0TJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44310/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-12-20T09:22:26.6027628+07:00 0HLJ647TOI0TF:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44310/images/banner1.svg   (ca22a1cb)
+2018-12-20T09:22:26.6050432+07:00 0HLJ647TOI0TE:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44310/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-12-20T09:22:26.6086533+07:00 0HLJ647TOI0TK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44310/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-12-20T09:22:26.6293327+07:00 0HLJ647TOI0TL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44310/images/banner3.svg   (ca22a1cb)
+2018-12-20T09:22:26.6399557+07:00 0HLJ647TOI0TI:00000001 [INF] Sending file. Request path: '"/js/site.js"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\js\site.js"' (27b0a520)
+2018-12-20T09:22:26.6438375+07:00 0HLJ647TOI0TI:00000001 [INF] Request finished in 51.1023ms 200 application/javascript (791a596a)
+2018-12-20T09:22:26.6790031+07:00 0HLJ647TOI0TL:00000001 [INF] Sending file. Request path: '"/images/banner3.svg"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\images\banner3.svg"' (27b0a520)
+2018-12-20T09:22:26.6819898+07:00 0HLJ647TOI0TL:00000001 [INF] Request finished in 69.0064ms 200 image/svg+xml (791a596a)
+2018-12-20T09:22:26.7121811+07:00 0HLJ647TOI0TH:00000001 [INF] Sending file. Request path: '"/images/banner2.svg"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\images\banner2.svg"' (27b0a520)
+2018-12-20T09:22:26.7239777+07:00 0HLJ647TOI0TH:00000001 [INF] Request finished in 139.4178ms 200 image/svg+xml (791a596a)
+2018-12-20T09:22:26.7287723+07:00 0HLJ647TOI0TF:00000002 [INF] Sending file. Request path: '"/images/banner1.svg"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\images\banner1.svg"' (27b0a520)
+2018-12-20T09:22:26.7345846+07:00 0HLJ647TOI0TF:00000002 [INF] Request finished in 134.1462ms 200 image/svg+xml (791a596a)
+2018-12-20T09:22:26.7474887+07:00 0HLJ647TOI0TJ:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2018-12-20T09:22:26.7512903+07:00 0HLJ647TOI0TJ:00000001 [INF] Request finished in 154.004ms 200 application/javascript (791a596a)
+2018-12-20T09:22:26.7808273+07:00 0HLJ647TOI0TG:00000001 [INF] Sending file. Request path: '"/css/site.css"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\css\site.css"' (27b0a520)
+2018-12-20T09:22:26.7848712+07:00 0HLJ647TOI0TG:00000001 [INF] Request finished in 198.6713ms 200 text/css (791a596a)
+2018-12-20T09:22:26.8431160+07:00 0HLJ647TOI0TE:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-12-20T09:22:26.8473238+07:00 0HLJ647TOI0TE:00000002 [INF] Request finished in 245.7473ms 200 text/css (791a596a)
+2018-12-20T09:22:26.8763637+07:00 0HLJ647TOI0TK:00000001 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2018-12-20T09:22:26.8813660+07:00 0HLJ647TOI0TK:00000001 [INF] Request finished in 271.22ms 200 application/javascript (791a596a)
+2018-12-20T10:04:00.4663853+07:00 0HLJ647TOI0TM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44310/admin/login   (ca22a1cb)
+2018-12-20T10:04:00.5383674+07:00 0HLJ647TOI0TM:00000001 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MyWebCoreApp.Data.EF " (9958f5bb)
+2018-12-20T10:04:00.6339270+07:00 0HLJ647TOI0TM:00000001 [INF] Executed DbCommand ("12"ms) [Parameters=["@__get_Item_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[CreatedDate], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[ModifiedDate], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-12-20T10:04:00.7574174+07:00 0HLJ647TOI0TM:00000001 [INF] Executed DbCommand ("9"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-12-20T10:04:00.7989313+07:00 0HLJ647TOI0TM:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-12-20T10:04:00.8176753+07:00 0HLJ647TOI0TM:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-12-20T10:04:00.8385525+07:00 0HLJ647TOI0TM:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-12-20T10:04:00.8471807+07:00 0HLJ647TOI0TM:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-12-20T10:04:00.8597561+07:00 0HLJ647TOI0TM:00000001 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Login\"}". Executing action "MyWebCoreApp.Areas.Admin.Controllers.LoginController.Index (MyWebCoreApp)" (a44c0341)
+2018-12-20T10:04:00.8638761+07:00 0HLJ647TOI0TM:00000001 [INF] Executing action method "MyWebCoreApp.Areas.Admin.Controllers.LoginController.Index (MyWebCoreApp)" - Validation state: Valid (dad538d7)
+2018-12-20T10:04:00.8672755+07:00 0HLJ647TOI0TM:00000001 [INF] Executed action method "MyWebCoreApp.Areas.Admin.Controllers.LoginController.Index (MyWebCoreApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.2882ms. (50a9e262)
+2018-12-20T10:04:00.8821744+07:00 0HLJ647TOI0TM:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-20T10:04:00.9130340+07:00 0HLJ647TOI0TM:00000001 [INF] Executed ViewResult - view "Index" executed in 42.6957ms. (f66409e9)
+2018-12-20T10:04:00.9167495+07:00 0HLJ647TOI0TM:00000001 [INF] Executed action "MyWebCoreApp.Areas.Admin.Controllers.LoginController.Index (MyWebCoreApp)" in 53.4068ms (afa2e885)
+2018-12-20T10:04:00.9207681+07:00 0HLJ647TOI0TM:00000001 [INF] Request finished in 456.2697ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-20T10:04:00.9390571+07:00 0HLJ647TOI0TM:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44310/node_modules/alertifyjs/build/css/alertify.min.css   (ca22a1cb)
+2018-12-20T10:04:00.9463283+07:00 0HLJ647TOI0TN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44310/node_modules/animate.css/animate.min.css   (ca22a1cb)
+2018-12-20T10:04:00.9522039+07:00 0HLJ647TOI0TO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44310/admin-site/css/custom.min.css   (ca22a1cb)
+2018-12-20T10:04:00.9543065+07:00 0HLJ647TOI0TM:00000002 [INF] Sending file. Request path: '"/node_modules/alertifyjs/build/css/alertify.min.css"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\node_modules\alertifyjs\build\css\alertify.min.css"' (27b0a520)
+2018-12-20T10:04:00.9590212+07:00 0HLJ647TOI0TP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:44310/lib/jquery-validation/localization/messages_vi.js   (ca22a1cb)
+2018-12-20T10:04:00.9615805+07:00 0HLJ647TOI0TM:00000002 [INF] Request finished in 20.7329ms 200 text/css (791a596a)
+2018-12-20T10:04:00.9661986+07:00 0HLJ647TOI0TO:00000001 [INF] Sending file. Request path: '"/admin-site/css/custom.min.css"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\admin-site\css\custom.min.css"' (27b0a520)
+2018-12-20T10:04:00.9695889+07:00 0HLJ647TOI0TN:00000001 [INF] Sending file. Request path: '"/node_modules/animate.css/animate.min.css"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\node_modules\animate.css\animate.min.css"' (27b0a520)
+2018-12-20T10:04:00.9753957+07:00 0HLJ647TOI0TO:00000001 [INF] Request finished in 25.2595ms 200 text/css (791a596a)
+2018-12-20T10:04:00.9799464+07:00 0HLJ647TOI0TN:00000001 [INF] Request finished in 31.6556ms 200 text/css (791a596a)
+2018-12-20T10:04:00.9831342+07:00 0HLJ647TOI0TP:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/localization/messages_vi.js"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\lib\jquery-validation\localization\messages_vi.js"' (27b0a520)
+2018-12-20T10:04:00.9865596+07:00 0HLJ647TOI0TP:00000001 [INF] Request finished in 31.0709ms 200 application/javascript (791a596a)
+2018-12-20T10:04:01.0326562+07:00 0HLJ647TOI0TM:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44310/node_modules/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-12-20T10:04:01.0381432+07:00 0HLJ647TOI0TM:00000003 [INF] Sending file. Request path: '"/node_modules/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\node_modules\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2018-12-20T10:04:01.0438021+07:00 0HLJ647TOI0TM:00000003 [INF] Request finished in 9.6587ms 200 font/woff2 (791a596a)
+2018-12-20T10:04:02.1420136+07:00 0HLJ647TOI0TN:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:44310/admin/login/authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-12-20T10:04:02.1649183+07:00 0HLJ647TOI0TN:00000002 [INF] Route matched with "{area = \"Admin\", action = \"Authen\", controller = \"Login\"}". Executing action "MyWebCoreApp.Areas.Admin.Controllers.LoginController.Authen (MyWebCoreApp)" (a44c0341)
+2018-12-20T10:04:02.2126704+07:00 0HLJ647TOI0TN:00000002 [INF] Executing action method "MyWebCoreApp.Areas.Admin.Controllers.LoginController.Authen (MyWebCoreApp)" with arguments (["MyWebCoreApp.Models.AccountViewModels.LoginViewModel"]) - Validation state: Valid (4e3479ed)
+2018-12-20T10:04:02.2205595+07:00 0HLJ647TOI0TN:00000002 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MyWebCoreApp.Data.EF " (9958f5bb)
+2018-12-20T10:04:02.2311311+07:00 0HLJ647TOI0TN:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[CreatedDate], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[ModifiedDate], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-12-20T10:04:02.2842265+07:00 0HLJ647TOI0TN:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-12-20T10:04:02.2889396+07:00 0HLJ647TOI0TN:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-12-20T10:04:02.2937922+07:00 0HLJ647TOI0TN:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-12-20T10:04:02.2986252+07:00 0HLJ647TOI0TN:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-12-20T10:04:02.3030721+07:00 0HLJ647TOI0TN:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-12-20T10:04:02.3102730+07:00 0HLJ647TOI0TN:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-12-20T10:04:02.3163277+07:00 0HLJ647TOI0TN:00000002 [INF] User logged in. (fdce0db4)
+2018-12-20T10:04:02.3213409+07:00 0HLJ647TOI0TN:00000002 [INF] Executed action method "MyWebCoreApp.Areas.Admin.Controllers.LoginController.Authen (MyWebCoreApp)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 105.889ms. (50a9e262)
+2018-12-20T10:04:02.3319364+07:00 0HLJ647TOI0TN:00000002 [INF] Executing ObjectResult, writing value of type '"MyWebCoreApp.Utilities.Dtos.GenericResult"'. (8a1b66c8)
+2018-12-20T10:04:02.3771739+07:00 0HLJ647TOI0TN:00000002 [INF] Executed action "MyWebCoreApp.Areas.Admin.Controllers.LoginController.Authen (MyWebCoreApp)" in 209.4368ms (afa2e885)
+2018-12-20T10:04:02.3815332+07:00 0HLJ647TOI0TN:00000002 [INF] Request finished in 240.1726ms 200 application/json; charset=utf-8 (791a596a)
+2018-12-20T10:04:02.3980455+07:00 0HLJ647TOI0TO:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44310/Admin/Home/index   (ca22a1cb)
+2018-12-20T10:04:02.4034046+07:00 0HLJ647TOI0TO:00000002 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Home\"}". Executing action "MyWebCoreApp.Areas.Admin.Controllers.HomeController.Index (MyWebCoreApp)" (a44c0341)
+2018-12-20T10:04:02.4167015+07:00 0HLJ647TOI0TO:00000002 [INF] Authorization was successful. (0d575a54)
+2018-12-20T10:04:02.4200635+07:00 0HLJ647TOI0TO:00000002 [INF] Executing action method "MyWebCoreApp.Areas.Admin.Controllers.HomeController.Index (MyWebCoreApp)" - Validation state: Valid (dad538d7)
+2018-12-20T10:04:02.4246670+07:00 0HLJ647TOI0TO:00000002 [INF] Executed action method "MyWebCoreApp.Areas.Admin.Controllers.HomeController.Index (MyWebCoreApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.9219ms. (50a9e262)
+2018-12-20T10:04:02.4433340+07:00 0HLJ647TOI0TO:00000002 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-20T10:04:02.4843638+07:00 0HLJ647TOI0TO:00000002 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MyWebCoreApp.Data.EF " (9958f5bb)
+2018-12-20T10:04:02.5211072+07:00 0HLJ647TOI0TO:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoFunction].[IconCss], [dtoFunction].[Id], [dtoFunction].[Name], [dtoFunction].[ParentId], COALESCE([dtoFunction].[SortOrder], 0) AS [SortOrder], [dtoFunction].[Status], [dtoFunction].[URL]
+FROM [Functions] AS [dtoFunction]" (0723d8ff)
+2018-12-20T10:04:02.5771211+07:00 0HLJ647TOI0TO:00000002 [INF] Executed ViewResult - view "Index" executed in 148.8918ms. (f66409e9)
+2018-12-20T10:04:02.5869247+07:00 0HLJ647TOI0TO:00000002 [INF] Executed action "MyWebCoreApp.Areas.Admin.Controllers.HomeController.Index (MyWebCoreApp)" in 179.3394ms (afa2e885)
+2018-12-20T10:04:02.5932921+07:00 0HLJ647TOI0TO:00000002 [INF] Request finished in 193.9434ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-20T10:04:02.5991846+07:00 0HLJ647TOI0TP:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:44310/Admin/Home/images/img.jpg   (ca22a1cb)
+2018-12-20T10:04:02.6048170+07:00 0HLJ647TOI0TP:00000002 [INF] Request finished in 6.7634ms 404  (791a596a)
+2018-12-20T10:04:08.0923070+07:00 0HLJ647TOI0TM:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44310/admin/role/index   (ca22a1cb)
+2018-12-20T10:04:08.0972427+07:00 0HLJ647TOI0TM:00000004 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Role\"}". Executing action "MyWebCoreApp.Areas.Admin.Controllers.RoleController.Index (MyWebCoreApp)" (a44c0341)
+2018-12-20T10:04:08.1012803+07:00 0HLJ647TOI0TM:00000004 [INF] Authorization was successful. (0d575a54)
+2018-12-20T10:04:08.1060646+07:00 0HLJ647TOI0TM:00000004 [INF] Executing action method "MyWebCoreApp.Areas.Admin.Controllers.RoleController.Index (MyWebCoreApp)" - Validation state: Valid (dad538d7)
+2018-12-20T10:04:08.1097961+07:00 0HLJ647TOI0TM:00000004 [INF] Executed action method "MyWebCoreApp.Areas.Admin.Controllers.RoleController.Index (MyWebCoreApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.4017ms. (50a9e262)
+2018-12-20T10:04:08.1159396+07:00 0HLJ647TOI0TM:00000004 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-20T10:04:08.1781955+07:00 0HLJ647TOI0TM:00000004 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MyWebCoreApp.Data.EF " (9958f5bb)
+2018-12-20T10:04:08.1843857+07:00 0HLJ647TOI0TM:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoFunction].[IconCss], [dtoFunction].[Id], [dtoFunction].[Name], [dtoFunction].[ParentId], COALESCE([dtoFunction].[SortOrder], 0) AS [SortOrder], [dtoFunction].[Status], [dtoFunction].[URL]
+FROM [Functions] AS [dtoFunction]" (0723d8ff)
+2018-12-20T10:04:08.2382693+07:00 0HLJ647TOI0TM:00000004 [INF] Executed ViewResult - view "Index" executed in 123.5942ms. (f66409e9)
+2018-12-20T10:04:08.2430536+07:00 0HLJ647TOI0TM:00000004 [INF] Executed action "MyWebCoreApp.Areas.Admin.Controllers.RoleController.Index (MyWebCoreApp)" in 141.5439ms (afa2e885)
+2018-12-20T10:04:08.2469037+07:00 0HLJ647TOI0TM:00000004 [INF] Request finished in 153.7182ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-20T10:04:08.2608035+07:00 0HLJ647TOI0TN:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44310/node_modules/jquery-treegrid/css/jquery.treegrid.css   (ca22a1cb)
+2018-12-20T10:04:08.2891841+07:00 0HLJ647TOI0TM:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44310/app/controllers/role/index.js?v=ERhFloZM-JBAXv8DmpJjo8X8sMKtbMiME33rKJerC0U   (ca22a1cb)
+2018-12-20T10:04:08.2929346+07:00 0HLJ647TOI0TO:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44310/admin/role/images/img.jpg   (ca22a1cb)
+2018-12-20T10:04:08.2959917+07:00 0HLJ647TOI0TP:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:44310/node_modules/jquery-treegrid/js/jquery.treegrid.min.js   (ca22a1cb)
+2018-12-20T10:04:08.3039285+07:00 0HLJ647TOI0TM:00000005 [INF] Sending file. Request path: '"/app/controllers/role/index.js"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\app\controllers\role\index.js"' (27b0a520)
+2018-12-20T10:04:08.3110938+07:00 0HLJ647TOI0TN:00000003 [INF] Sending file. Request path: '"/node_modules/jquery-treegrid/css/jquery.treegrid.css"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\node_modules\jquery-treegrid\css\jquery.treegrid.css"' (27b0a520)
+2018-12-20T10:04:08.3155087+07:00 0HLJ647TOI0TM:00000005 [INF] Request finished in 49.0813ms 200 application/javascript (791a596a)
+2018-12-20T10:04:08.3195565+07:00 0HLJ647TOI0TO:00000003 [INF] Request finished in 41.7376ms 404  (791a596a)
+2018-12-20T10:04:08.3225312+07:00 0HLJ647TOI0TN:00000003 [INF] Request finished in 56.8376ms 200 text/css (791a596a)
+2018-12-20T10:04:08.3562523+07:00 0HLJ647TOI0TP:00000003 [INF] Sending file. Request path: '"/node_modules/jquery-treegrid/js/jquery.treegrid.min.js"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\node_modules\jquery-treegrid\js\jquery.treegrid.min.js"' (27b0a520)
+2018-12-20T10:04:08.3610418+07:00 0HLJ647TOI0TP:00000003 [INF] Request finished in 100.5561ms 200 application/javascript (791a596a)
+2018-12-20T10:04:08.3667886+07:00 0HLJ647TOI0TN:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44310/admin/role/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-12-20T10:04:08.3725425+07:00 0HLJ647TOI0TN:00000004 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Role\"}". Executing action "MyWebCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (MyWebCoreApp)" (a44c0341)
+2018-12-20T10:04:08.3764826+07:00 0HLJ647TOI0TN:00000004 [INF] Authorization was successful. (0d575a54)
+2018-12-20T10:04:08.3815190+07:00 0HLJ647TOI0TN:00000004 [INF] Executing action method "MyWebCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (MyWebCoreApp)" with arguments (["", "1", "10"]) - Validation state: Valid (4e3479ed)
+2018-12-20T10:04:08.3874718+07:00 0HLJ647TOI0TN:00000004 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MyWebCoreApp.Data.EF " (9958f5bb)
+2018-12-20T10:04:08.4028754+07:00 0HLJ647TOI0TN:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppRoles] AS [a]" (0723d8ff)
+2018-12-20T10:04:08.4175709+07:00 0HLJ647TOI0TN:00000004 [WRN] Query: '"(from AppRole dtoAppRole in DbSet<AppRole> select new AppRoleViewModel{ { 
+    Description = [dtoAp..."' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results. (32148ccc)
+2018-12-20T10:04:08.4278488+07:00 0HLJ647TOI0TN:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoAppRole].[Description], [dtoAppRole].[Id], [dtoAppRole].[Name]
+FROM [AppRoles] AS [dtoAppRole]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-12-20T10:04:08.4362895+07:00 0HLJ647TOI0TN:00000004 [INF] Executed action method "MyWebCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (MyWebCoreApp)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 50.6435ms. (50a9e262)
+2018-12-20T10:04:08.4399570+07:00 0HLJ647TOI0TN:00000004 [INF] Executing ObjectResult, writing value of type '"MyWebCoreApp.Utilities.Dtos.PageResult`1[[MyWebCoreApp.Application.ViewModels.System.AppRoleViewModel, MyWebCoreApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-12-20T10:04:08.4517231+07:00 0HLJ647TOI0TN:00000004 [INF] Executed action "MyWebCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (MyWebCoreApp)" in 74.7242ms (afa2e885)
+2018-12-20T10:04:08.4557211+07:00 0HLJ647TOI0TN:00000004 [INF] Request finished in 87.84ms 200 application/json; charset=utf-8 (791a596a)
+2018-12-20T10:04:08.4712123+07:00 0HLJ647TOI0TM:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44310/admin/role/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-12-20T10:04:08.4760496+07:00 0HLJ647TOI0TM:00000006 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Role\"}". Executing action "MyWebCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (MyWebCoreApp)" (a44c0341)
+2018-12-20T10:04:08.4799066+07:00 0HLJ647TOI0TM:00000006 [INF] Authorization was successful. (0d575a54)
+2018-12-20T10:04:08.4846267+07:00 0HLJ647TOI0TM:00000006 [INF] Executing action method "MyWebCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (MyWebCoreApp)" with arguments (["", "1", "10"]) - Validation state: Valid (4e3479ed)
+2018-12-20T10:04:08.4886307+07:00 0HLJ647TOI0TM:00000006 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MyWebCoreApp.Data.EF " (9958f5bb)
+2018-12-20T10:04:08.4932047+07:00 0HLJ647TOI0TM:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppRoles] AS [a]" (0723d8ff)
+2018-12-20T10:04:08.4970467+07:00 0HLJ647TOI0TM:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoAppRole].[Description], [dtoAppRole].[Id], [dtoAppRole].[Name]
+FROM [AppRoles] AS [dtoAppRole]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-12-20T10:04:08.5018700+07:00 0HLJ647TOI0TM:00000006 [INF] Executed action method "MyWebCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (MyWebCoreApp)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 12.5482ms. (50a9e262)
+2018-12-20T10:04:08.5053431+07:00 0HLJ647TOI0TM:00000006 [INF] Executing ObjectResult, writing value of type '"MyWebCoreApp.Utilities.Dtos.PageResult`1[[MyWebCoreApp.Application.ViewModels.System.AppRoleViewModel, MyWebCoreApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-12-20T10:04:08.5094265+07:00 0HLJ647TOI0TM:00000006 [INF] Executed action "MyWebCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (MyWebCoreApp)" in 29.6886ms (afa2e885)
+2018-12-20T10:04:08.5127465+07:00 0HLJ647TOI0TM:00000006 [INF] Request finished in 42.2915ms 200 application/json; charset=utf-8 (791a596a)
+2018-12-20T10:04:12.1843525+07:00 0HLJ647TOI0TO:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:44310/Admin/Role/Delete application/x-www-form-urlencoded; charset=UTF-8 39 (ca22a1cb)
+2018-12-20T10:04:12.1930166+07:00 0HLJ647TOI0TO:00000004 [INF] Route matched with "{area = \"Admin\", action = \"Delete\", controller = \"Role\"}". Executing action "MyWebCoreApp.Areas.Admin.Controllers.RoleController.Delete (MyWebCoreApp)" (a44c0341)
+2018-12-20T10:04:12.1967590+07:00 0HLJ647TOI0TO:00000004 [INF] Authorization was successful. (0d575a54)
+2018-12-20T10:04:12.2010612+07:00 0HLJ647TOI0TO:00000004 [INF] Executing action method "MyWebCoreApp.Areas.Admin.Controllers.RoleController.Delete (MyWebCoreApp)" with arguments (["a99cbe64-94c4-4fa0-73a5-08d66562f53f"]) - Validation state: Valid (4e3479ed)
+2018-12-20T10:04:12.2080979+07:00 0HLJ647TOI0TO:00000004 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MyWebCoreApp.Data.EF " (9958f5bb)
+2018-12-20T10:04:12.2175215+07:00 0HLJ647TOI0TO:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=["@__roleId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[ConcurrencyStamp], [u].[Description], [u].[Name], [u].[NormalizedName]
+FROM [AppRoles] AS [u]
+WHERE [u].[Id] = @__roleId_0" (0723d8ff)
+2018-12-20T10:04:12.2774588+07:00 0HLJ647TOI0TO:00000004 [INF] Executed DbCommand ("7"ms) [Parameters=["@p0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [AppRoles]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-12-20T10:04:12.2947295+07:00 0HLJ647TOI0TO:00000004 [INF] Executed action method "MyWebCoreApp.Areas.Admin.Controllers.RoleController.Delete (MyWebCoreApp)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 90.1194ms. (50a9e262)
+2018-12-20T10:04:12.2988661+07:00 0HLJ647TOI0TO:00000004 [INF] Executing ObjectResult, writing value of type '"System.Guid"'. (8a1b66c8)
+2018-12-20T10:04:12.3028819+07:00 0HLJ647TOI0TO:00000004 [INF] Executed action "MyWebCoreApp.Areas.Admin.Controllers.RoleController.Delete (MyWebCoreApp)" in 106.3814ms (afa2e885)
+2018-12-20T10:04:12.3070128+07:00 0HLJ647TOI0TO:00000004 [INF] Request finished in 122.8465ms 200 application/json; charset=utf-8 (791a596a)
+2018-12-20T10:04:12.3127819+07:00 0HLJ647TOI0TP:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:44310/admin/role/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-12-20T10:04:12.3183955+07:00 0HLJ647TOI0TP:00000004 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Role\"}". Executing action "MyWebCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (MyWebCoreApp)" (a44c0341)
+2018-12-20T10:04:12.3224693+07:00 0HLJ647TOI0TP:00000004 [INF] Authorization was successful. (0d575a54)
+2018-12-20T10:04:12.3265971+07:00 0HLJ647TOI0TP:00000004 [INF] Executing action method "MyWebCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (MyWebCoreApp)" with arguments (["", "1", "10"]) - Validation state: Valid (4e3479ed)
+2018-12-20T10:04:12.3299395+07:00 0HLJ647TOI0TP:00000004 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MyWebCoreApp.Data.EF " (9958f5bb)
+2018-12-20T10:04:12.3345792+07:00 0HLJ647TOI0TP:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppRoles] AS [a]" (0723d8ff)
+2018-12-20T10:04:12.3397331+07:00 0HLJ647TOI0TP:00000004 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoAppRole].[Description], [dtoAppRole].[Id], [dtoAppRole].[Name]
+FROM [AppRoles] AS [dtoAppRole]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-12-20T10:04:12.3429412+07:00 0HLJ647TOI0TP:00000004 [INF] Executed action method "MyWebCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (MyWebCoreApp)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 13.2024ms. (50a9e262)
+2018-12-20T10:04:12.3468124+07:00 0HLJ647TOI0TP:00000004 [INF] Executing ObjectResult, writing value of type '"MyWebCoreApp.Utilities.Dtos.PageResult`1[[MyWebCoreApp.Application.ViewModels.System.AppRoleViewModel, MyWebCoreApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-12-20T10:04:12.3503501+07:00 0HLJ647TOI0TP:00000004 [INF] Executed action "MyWebCoreApp.Areas.Admin.Controllers.RoleController.GetAllPaging (MyWebCoreApp)" in 28.5901ms (afa2e885)
+2018-12-20T10:04:12.3545280+07:00 0HLJ647TOI0TP:00000004 [INF] Request finished in 41.1728ms 200 application/json; charset=utf-8 (791a596a)
+2018-12-20T10:04:13.8585776+07:00 0HLJ647TOI0TN:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44310/admin/user/index   (ca22a1cb)
+2018-12-20T10:04:13.8658660+07:00 0HLJ647TOI0TN:00000005 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"User\"}". Executing action "MyWebCoreApp.Areas.Admin.Controllers.UserController.Index (MyWebCoreApp)" (a44c0341)
+2018-12-20T10:04:13.8701499+07:00 0HLJ647TOI0TN:00000005 [INF] Authorization was successful. (0d575a54)
+2018-12-20T10:04:13.8746191+07:00 0HLJ647TOI0TN:00000005 [INF] Executing action method "MyWebCoreApp.Areas.Admin.Controllers.UserController.Index (MyWebCoreApp)" - Validation state: Valid (dad538d7)
+2018-12-20T10:04:13.8849249+07:00 0HLJ647TOI0TN:00000005 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MyWebCoreApp.Data.EF " (9958f5bb)
+2018-12-20T10:04:13.9233380+07:00 0HLJ647TOI0TN:00000005 [INF] Executed DbCommand ("5"ms) [Parameters=["@__functionId_1='?' (Size = 128) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Functions] AS [f]
+        INNER JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+        INNER JOIN [AppRoles] AS [r] ON [p].[RoleId] = [r].[Id]
+        WHERE ([r].[Name] IN (N'Admin') AND ([f].[Id] = @__functionId_1)) AND ([p].[CanRead] = 1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-12-20T10:04:13.9406365+07:00 0HLJ647TOI0TN:00000005 [INF] Authorization was successful. (0d575a54)
+2018-12-20T10:04:13.9429555+07:00 0HLJ647TOI0TN:00000005 [INF] Executed action method "MyWebCoreApp.Areas.Admin.Controllers.UserController.Index (MyWebCoreApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 66.1908ms. (50a9e262)
+2018-12-20T10:04:13.9482717+07:00 0HLJ647TOI0TN:00000005 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-12-20T10:04:13.9686437+07:00 0HLJ647TOI0TN:00000005 [INF] Executed DbCommand ("5"ms) [Parameters=["@__functionId_1='?' (Size = 128) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Functions] AS [f]
+        INNER JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+        INNER JOIN [AppRoles] AS [r] ON [p].[RoleId] = [r].[Id]
+        WHERE ([r].[Name] IN (N'Admin') AND ([f].[Id] = @__functionId_1)) AND ([p].[CanCreate] = 1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-12-20T10:04:13.9732856+07:00 0HLJ647TOI0TN:00000005 [INF] Authorization was successful. (0d575a54)
+2018-12-20T10:04:13.9961078+07:00 0HLJ647TOI0TN:00000005 [INF] Executed DbCommand ("4"ms) [Parameters=["@__functionId_1='?' (Size = 128) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Functions] AS [f]
+        INNER JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+        INNER JOIN [AppRoles] AS [r] ON [p].[RoleId] = [r].[Id]
+        WHERE ([r].[Name] IN (N'Admin') AND ([f].[Id] = @__functionId_1)) AND ([p].[CanUpdate] = 1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-12-20T10:04:14.0003341+07:00 0HLJ647TOI0TN:00000005 [INF] Authorization was successful. (0d575a54)
+2018-12-20T10:04:14.0134197+07:00 0HLJ647TOI0TN:00000005 [INF] Executed DbCommand ("4"ms) [Parameters=["@__functionId_1='?' (Size = 128) (DbType = AnsiString)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Functions] AS [f]
+        INNER JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+        INNER JOIN [AppRoles] AS [r] ON [p].[RoleId] = [r].[Id]
+        WHERE ([r].[Name] IN (N'Admin') AND ([f].[Id] = @__functionId_1)) AND ([p].[CanDelete] = 1))
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END" (0723d8ff)
+2018-12-20T10:04:14.0173573+07:00 0HLJ647TOI0TN:00000005 [INF] Authorization was successful. (0d575a54)
+2018-12-20T10:04:14.0518301+07:00 0HLJ647TOI0TN:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dtoFunction].[IconCss], [dtoFunction].[Id], [dtoFunction].[Name], [dtoFunction].[ParentId], COALESCE([dtoFunction].[SortOrder], 0) AS [SortOrder], [dtoFunction].[Status], [dtoFunction].[URL]
+FROM [Functions] AS [dtoFunction]" (0723d8ff)
+2018-12-20T10:04:14.1034386+07:00 0HLJ647TOI0TN:00000005 [INF] Executed ViewResult - view "Index" executed in 154.5429ms. (f66409e9)
+2018-12-20T10:04:14.1063752+07:00 0HLJ647TOI0TN:00000005 [INF] Executed action "MyWebCoreApp.Areas.Admin.Controllers.UserController.Index (MyWebCoreApp)" in 237.7839ms (afa2e885)
+2018-12-20T10:04:14.1107057+07:00 0HLJ647TOI0TN:00000005 [INF] Request finished in 251.9197ms 200 text/html; charset=utf-8 (791a596a)
+2018-12-20T10:04:14.1218210+07:00 0HLJ647TOI0TM:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:44310/admin/user/images/img.jpg   (ca22a1cb)
+2018-12-20T10:04:14.1267357+07:00 0HLJ647TOI0TO:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44310/app/controllers/user/index.js?v=42Wyei6sFtCSi-c1R83j2ycpdpTfhIIqz1Zt95RtgKM   (ca22a1cb)
+2018-12-20T10:04:14.1353162+07:00 0HLJ647TOI0TM:00000007 [INF] Request finished in 10.7892ms 404  (791a596a)
+2018-12-20T10:04:14.1385912+07:00 0HLJ647TOI0TO:00000005 [INF] Sending file. Request path: '"/app/controllers/user/index.js"'. Physical path: '"D:\11. PROGRAMMING\06. Website\ASPdotNetCore\MyWebCoreApp\MyWebCoreApp\wwwroot\app\controllers\user\index.js"' (27b0a520)
+2018-12-20T10:04:14.1429351+07:00 0HLJ647TOI0TO:00000005 [INF] Request finished in 16.76ms 200 application/javascript (791a596a)
+2018-12-20T10:04:14.1695269+07:00 0HLJ647TOI0TP:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:44310/admin/user/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-12-20T10:04:14.1748323+07:00 0HLJ647TOI0TP:00000005 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"User\"}". Executing action "MyWebCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MyWebCoreApp)" (a44c0341)
+2018-12-20T10:04:14.1774960+07:00 0HLJ647TOI0TP:00000005 [INF] Authorization was successful. (0d575a54)
+2018-12-20T10:04:14.1813851+07:00 0HLJ647TOI0TP:00000005 [INF] Executing action method "MyWebCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MyWebCoreApp)" with arguments (["", "1", "10"]) - Validation state: Valid (4e3479ed)
+2018-12-20T10:04:14.1872952+07:00 0HLJ647TOI0TP:00000005 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MyWebCoreApp.Data.EF " (9958f5bb)
+2018-12-20T10:04:14.1943141+07:00 0HLJ647TOI0TP:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [a]" (0723d8ff)
+2018-12-20T10:04:14.2012309+07:00 0HLJ647TOI0TP:00000005 [WRN] Query: '"(from AppUser x in DbSet<AppUser> select new AppUserViewModel{ { 
+    UserName = [x].UserName, , 
+..."' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results. (32148ccc)
+2018-12-20T10:04:14.2162431+07:00 0HLJ647TOI0TP:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Avatar], [x].[BirthDay], [x].[Email], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[CreatedDate]
+FROM [AppUsers] AS [x]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-12-20T10:04:14.2246802+07:00 0HLJ647TOI0TP:00000005 [INF] Executed action method "MyWebCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MyWebCoreApp)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 40.3728ms. (50a9e262)
+2018-12-20T10:04:14.2279032+07:00 0HLJ647TOI0TP:00000005 [INF] Executing ObjectResult, writing value of type '"MyWebCoreApp.Utilities.Dtos.PageResult`1[[MyWebCoreApp.Application.ViewModels.System.AppUserViewModel, MyWebCoreApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-12-20T10:04:14.2440251+07:00 0HLJ647TOI0TP:00000005 [INF] Executed action "MyWebCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MyWebCoreApp)" in 65.6312ms (afa2e885)
+2018-12-20T10:04:14.2482069+07:00 0HLJ647TOI0TP:00000005 [INF] Request finished in 78.1858ms 200 application/json; charset=utf-8 (791a596a)
+2018-12-20T10:04:14.2602275+07:00 0HLJ647TOI0TM:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:44310/admin/user/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-12-20T10:04:14.2624186+07:00 0HLJ647TOI0TN:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44310/admin/user/null   (ca22a1cb)
+2018-12-20T10:04:14.2679658+07:00 0HLJ647TOI0TN:00000006 [INF] Request finished in 7.3047ms 404  (791a596a)
+2018-12-20T10:04:14.2797977+07:00 0HLJ647TOI0TM:00000008 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"User\"}". Executing action "MyWebCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MyWebCoreApp)" (a44c0341)
+2018-12-20T10:04:14.2834872+07:00 0HLJ647TOI0TM:00000008 [INF] Authorization was successful. (0d575a54)
+2018-12-20T10:04:14.2871075+07:00 0HLJ647TOI0TM:00000008 [INF] Executing action method "MyWebCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MyWebCoreApp)" with arguments (["", "1", "10"]) - Validation state: Valid (4e3479ed)
+2018-12-20T10:04:14.2905760+07:00 0HLJ647TOI0TM:00000008 [INF] Entity Framework Core "2.1.4-rtm-31024" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=MyWebCoreApp.Data.EF " (9958f5bb)
+2018-12-20T10:04:14.2946100+07:00 0HLJ647TOI0TM:00000008 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppUsers] AS [a]" (0723d8ff)
+2018-12-20T10:04:14.2995895+07:00 0HLJ647TOI0TM:00000008 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[UserName], [x].[Avatar], [x].[BirthDay], [x].[Email], [x].[FullName], [x].[Id], [x].[PhoneNumber], [x].[Status], [x].[CreatedDate]
+FROM [AppUsers] AS [x]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-12-20T10:04:14.3028877+07:00 0HLJ647TOI0TM:00000008 [INF] Executed action method "MyWebCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MyWebCoreApp)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 12.6152ms. (50a9e262)
+2018-12-20T10:04:14.3063922+07:00 0HLJ647TOI0TM:00000008 [INF] Executing ObjectResult, writing value of type '"MyWebCoreApp.Utilities.Dtos.PageResult`1[[MyWebCoreApp.Application.ViewModels.System.AppUserViewModel, MyWebCoreApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-12-20T10:04:14.3107995+07:00 0HLJ647TOI0TM:00000008 [INF] Executed action "MyWebCoreApp.Areas.Admin.Controllers.UserController.GetAllPaging (MyWebCoreApp)" in 26.9301ms (afa2e885)
+2018-12-20T10:04:14.3172007+07:00 0HLJ647TOI0TM:00000008 [INF] Request finished in 55.3349ms 200 application/json; charset=utf-8 (791a596a)
+2018-12-20T10:04:14.3246820+07:00 0HLJ647TOI0TO:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:44310/admin/user/null   (ca22a1cb)
+2018-12-20T10:04:14.3288261+07:00 0HLJ647TOI0TO:00000006 [INF] Request finished in 3.6719ms 404  (791a596a)

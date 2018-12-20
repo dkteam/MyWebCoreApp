@@ -18,6 +18,8 @@ namespace MyWebCoreApp.Application.AutoMapper
             CreateMap<Product, ProductViewModel>();
             CreateMap<Post, PostViewModel>();
             CreateMap<PostCategory, PostCategoryViewModel>();
+            CreateMap<AppUser, AppUserViewModel>();
+            CreateMap<AppRole, AppRoleViewModel>();
         }
     }
 }

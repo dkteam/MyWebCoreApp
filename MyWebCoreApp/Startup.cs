@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -10,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using MyWebCoreApp.Application.Implementations;
 using MyWebCoreApp.Application.Interfaces;
+using MyWebCoreApp.Authorization;
 using MyWebCoreApp.Data.EF;
 using MyWebCoreApp.Data.EF.Repositories;
 using MyWebCoreApp.Data.Entities;
@@ -92,12 +94,19 @@ namespace MyWebCoreApp
             services.AddTransient<IPostCategoryRepository, PostCategoryRepository>();
             services.AddTransient<ITagRepository, TagRepository>();
             services.AddTransient<IPostTagRepository, PostTagRepository>();
+            services.AddTransient<IFunctionRepository, FunctionRepository>();
+            services.AddTransient<IPermissionRepository, PermissionRepository>();
 
             //Services
             services.AddTransient<IProductCategoryService, ProductCategoryService>();
             services.AddTransient<IFunctionService, FunctionService>();
             services.AddTransient<IPostService, PostService>();
             services.AddTransient<IPostCategoryService, PostCategoryService>();
+            services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IFunctionService, FunctionService>();
+            services.AddTransient<IRoleService, RoleService>();
+
+            services.AddTransient<IAuthorizationHandler, BaseResourceAuthorizationHandler>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

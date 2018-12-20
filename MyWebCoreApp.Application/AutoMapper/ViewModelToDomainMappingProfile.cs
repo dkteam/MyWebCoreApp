@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
 using MyWebCoreApp.Application.ViewModels.Post;
 using MyWebCoreApp.Application.ViewModels.Product;
+using MyWebCoreApp.Application.ViewModels.System;
 using MyWebCoreApp.Data.Entities;
+using System;
 
 namespace MyWebCoreApp.Application.AutoMapper
 {
@@ -17,6 +19,10 @@ namespace MyWebCoreApp.Application.AutoMapper
                 .ConstructUsing(c => new Post(c.Name, c.Description, c.Content, c.ThumbnailImage, c.Image, c.HomeFlag, c.HotFlag, c.Tags, c.ViewCount, c.CategoryId, c.Status, c.IsDeleted, c.SeoPageTitle, c.SeoAlias, c.SeoKeywords, c.SeoDescription));
             CreateMap<PostCategoryViewModel, PostCategory>()
                 .ConstructUsing(c => new PostCategory(c.Name, c.Description, c.ParentId, c.ThumbnailImage, c.HomeFlag, c.IsDeleted, c.Status, c.SeoPageTitle, c.SeoAlias, c.SeoKeywords, c.SeoDescription, c.SortOrder));
+            CreateMap<AppUserViewModel, AppUser>()
+                .ConstructUsing(c => new AppUser(c.Id.GetValueOrDefault(Guid.Empty), c.FullName, c.UserName, c.Email, c.PhoneNumber, c.Avatar, c.Status));
+            CreateMap<PermissionViewModel, Permission>()
+                .ConstructUsing(c => new Permission(c.RoleId, c.FunctionId, c.CanCreate, c.CanRead, c.CanUpdate, c.CanDelete));
         }
     }
 }
